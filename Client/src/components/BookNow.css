@@ -1,0 +1,257 @@
+/* Keyframes */
+@keyframes leftSideAni {
+  0% {
+      transform: translateX(-100px);
+      opacity: 0;
+  }
+  100% {
+      transform: translateX(0);
+      opacity: 1;
+  }
+}
+@keyframes navani {
+  0% {
+      transform: translateY(100px);
+      opacity: 0;
+  }
+  100% {
+      transform: translateY(0);
+      opacity: 1;
+  }
+}
+@keyframes topSideAni {
+  0% {
+      transform: translateY(-100px);
+      opacity: 0;
+  }
+  100% {
+      transform: translateY(0);
+      opacity: 1;
+  }
+}
+@keyframes Rotate-reverse {
+  from {
+    transform: rotate(360deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+}  
+@keyframes Rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Classes */
+.sttt {
+  font-family: 'PoppinsBold', sans-serif;
+  text-transform: capitalize;
+  font-size: 100px;
+  font-weight: extrabold;
+  animation: topSideAni 1s ease forwards;
+}
+
+.discover {
+  animation: leftSideAni 1s ease forwards;
+}
+.discovery {
+  animation: leftSideAni 1s ease forwards;
+}
+
+.study {
+  animation: leftSideAni 1s ease forwards;
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 330px;
+  height: auto;
+  gap: 5px;
+  padding: 1%;
+  text-align: center;
+  border: 0.1px solid #e6944c;
+
+  transition: transform 0.3s ease-in-out;
+  
+}
+
+.card:hover {
+  transform: scale(1.08);
+  background-color: #f0f0f0; 
+}
+
+/* Media Queries */
+@media (max-width: 640px) and (orientation: portrait) {
+  .card {
+    width: 90%; /* Adjust width as needed */
+    height: auto;
+    margin: 0 auto 20px; /* Center horizontally and add bottom margin */
+    flex-direction: column; /* Stack cards vertically on small screens */
+    align-items: center; /* Center items horizontally */
+  }
+
+  .sttt {
+    font-size: 2rem; /* Adjust font size for smaller screens */
+  }
+}
+
+
+@media (min-width: 768px) {
+  .sttt {
+      font-size: 2xl;
+  }
+}
+
+@media (min-width: 1024px) {
+  .sttt {
+      font-size: 8xl;
+  }
+}
+.scrolled {
+  background-color: rgba(0, 0, 0, 0.9); /* Adjust the opacity as needed */
+  backdrop-filter: blur(1000px); /* Adjust the blur intensity as needed */
+  position: fixed;
+}
+@keyframes countUp {
+  from {
+      opacity: 0;
+      transform: translateY(50px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+.animate-count-up {
+  animation: countUp 1s ease-out;
+}
+
+.recommended-text {
+  padding: 10px;
+  cursor: pointer;
+}
+
+.recommended-text:hover {
+  background-color: #f0f0f0;
+}
+
+.discovery p::before {
+  /* Unicode character for a bullet point */
+  color: #737373; /* Adjust the color if necessary */
+  display: inline-block;
+  width: 1.5em; /* Space for the bullet */
+  margin-left: -0.1em; /* Adjust the left margin to position the bullet correctly */
+  font-size: 1.5em; /* Increase the font size to make the bullet bigger */
+  line-height: 1; /* Ensure the bullet aligns properly with the text */
+}
+
+/* General styling for search input */
+.search-input {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #ddd;
+  border-radius: 0.375rem;
+  outline: none;
+  transition: border-color 0.3s ease-in-out;
+}
+
+.search-input:focus {
+  border-color: #4b5563; /* Tailwind's gray-700 color */
+}
+
+.search-results {
+  max-height: 200px;
+  overflow-y: auto;
+  border: 1px solid #ddd;
+  border-top: none;
+  border-radius: 0 0 0.375rem 0.375rem;
+  background-color: white;
+  z-index: 1000;
+}
+
+.recommended-text {
+  padding: 0.5rem;
+  cursor: pointer;
+}
+
+.recommended-text:hover {
+  background-color: #f3f4f6; /* Tailwind's gray-100 color */
+}
+
+/* Flexbox settings to ensure proper layout */
+.flex.justify-between.items-center.w-full {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+/* Align buttons properly in mobile view */
+@media (max-width: 768px) {
+  .flex.items-center.space-x-2.md\:order-2 {
+      position: absolute;
+      top: 0;
+      right: 0;
+      padding: 1rem;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      space-x: 0.5rem;
+  }
+
+  .search-input {
+      width: calc(100% - 120px); /* Adjust based on the size of the buttons */
+      margin-right: 8rem;
+      margin-left: -2rem;
+  }
+  
+  .search-results {
+      width: calc(100% - 120px); /* Adjust based on the size of the buttons */
+  }
+}
+/* General reset for preventing overflow */
+body, html {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* Prevent horizontal overflow */
+}
+
+/* Ensuring Navbar does not cause overflow */
+.navbar {
+  width: 100%;
+  overflow: hidden;
+}
+
+/* Fixing potential issues with the search results */
+.search-results {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+/* Specific class to manage content within the Navbar */
+.navbar-collapse {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0.5rem;
+}
+
+@media (max-width: 768px) {
+  .navbar-collapse {
+      width: 100vw;
+  }
+}
+
+/* Optional: Adjust link styles to avoid extra spacing */
+.navbar-collapse a {
+  width: 100%;
+  padding: 0.5rem 0;
+  text-align: left;
+}

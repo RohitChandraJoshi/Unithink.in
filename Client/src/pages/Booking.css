@@ -1,0 +1,162 @@
+/* ContactBox.css */
+
+.contact-box {
+  background-color: #f7fafc; /* Light gray background */
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4); /* Shadow effect */
+  border-radius: 0 20px 20px 0; /* Only right corners rounded */
+  padding: 5%; /* Padding */
+  height: auto; /* Auto height */
+  margin: 2%; /* Margin */
+  max-width: 10000px; /* Max width */
+  padding-bottom: 5%;
+  margin-top: 7%;
+  padding-top: 5%;
+}
+
+.contact-box h2 {
+  font-size: 1.25rem; /* Heading font size */
+  font-weight: bold; /* Heading font weight */
+  margin-bottom: 1rem; /* Bottom margin for heading */
+}
+
+.contact-box .contact-details {
+  display: flex; /* Use flexbox */
+  flex-direction: column; /* Stack items vertically */
+}
+
+.contact-box .contact-details p {
+  display: flex; /* Use flexbox */
+  align-items: center; /* Align items vertically */
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.contact-box .contact-details p svg {
+  margin-right: 0.5rem; /* Add space between icon and text */
+}
+
+.contact-box .slogan {
+  margin-top: 1rem; /* Top margin for slogan */
+}
+
+/* SocialIcons.css */
+
+.social-icons_Header {
+  
+  display: flex; /* Use flexbox */
+  justify-content: left; /* Align items to the left */
+  gap: 1.5rem; /* Space between icons */
+  margin-right: -25%;
+}
+
+.social-icons_Header a {
+  color: #333; /* Icon color */
+  font-size: 1.5rem; /* Icon size */
+}
+
+.social-icons_Header a:hover {
+  color: #007bff; /* Hover color */
+}
+
+.social-icons {
+  margin-top: 1rem; /* Top margin for the social icons section */
+  display: flex; /* Use flexbox */
+  justify-content: left; /* Align items to the left */
+  gap: 1rem; /* Space between icons */
+}
+
+.social-icons a {
+  color: #333; /* Icon color */
+  font-size: 1.5rem; /* Icon size */
+}
+
+.social-icons a:hover {
+  color: #007bff; /* Hover color */
+}
+
+
+/* Keyframes */
+@keyframes leftSideAni {
+  0% {
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes navani {
+  0% {
+    transform: translateY(100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes topSideAni {
+  0% {
+    transform: translateY(-100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes Rotate-reverse {
+  from {
+    transform: rotate(360deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+}
+@keyframes Rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Classes */
+.sttt {
+  font-family: 'PoppinsBold', sans-serif;
+  text-transform: capitalize;
+  font-size: 4vw; /* Adjust font size based on viewport width */
+  font-weight: extrabold;
+  animation: topSideAni 1s ease forwards;
+}
+
+.discover {
+  animation: leftSideAni 1s ease forwards;
+}
+
+.study {
+  animation: leftSideAni 1s ease forwards;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .sttt {
+    font-size: 6vw; 
+  }
+
+  .contact-box {
+    margin: 5% auto; 
+  }
+}
+
+@media (max-width: 480px) {
+  .sttt {
+    font-size: 8vw;
+  }
+
+  .contact-box {
+    max-width: 90%; 
+  }
+}

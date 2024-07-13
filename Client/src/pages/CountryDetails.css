@@ -1,0 +1,85 @@
+#country-details {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  #country-name {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  #country-image {
+    width: 100%;
+    max-width: 5000px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  #country-about,
+  #top-reasons-title,
+  #universities-title,
+  #international-students,
+  #cost-of-living,
+  #hostel-price,
+  #visa-type,
+  #visa-processing-time,
+  #english-tests {
+    margin-bottom: 20px;
+  }
+  /* Add these styles to your existing CSS file */
+
+/* Logo */
+.logo {
+  width: 150px; /* Adjust the width of the logo */
+  animation: zoomAndBlink 1.5s infinite alternate; /* Apply zoom and blink animation */
+  
+}
+.logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10%;
+  height: 100vh; /* Full viewport height */
+}
+/* Keyframes for Zoom and Blink */
+@keyframes zoomAndBlink {
+  0% {
+    transform: scale(1); /* Initial size */
+  }
+  50% {
+    transform: scale(1.2); /* Zoom effect */
+  }
+  100% {
+    opacity: 0; /* Disappear */
+  }
+}
+.course-card {
+  width: 350px; /* Adjust the width as needed */
+  height: 450px; /* Adjust the height as needed */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  transition: transform 0.3s ease; /* Add transition for smooth hover effect */
+}
+
+.course-card img {
+  width: 100%;
+  height: 200px; /* Adjust the height as needed */
+  object-fit: cover;
+}
+
+.course-card:hover {
+  transform: scale(1.05); /* Add scaling effect on hover */
+}
+
+@media (max-width: 1024px) {
+  .course-card {
+    width: 300px; /* Adjust width for tablets and smaller screens */
+    height: 400px; /* Adjust height for tablets and smaller screens */
+  }
+
+}
+

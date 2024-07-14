@@ -205,7 +205,7 @@ function Contact() {
             <p style={{ fontWeight: 'bold' }}><HiMail /> info@unithink.in</p>
           </div>
           <div className="social-icons">
-            <Footer.Icon href="https://www.linkedin.com/in/sheelan-misra/" target="_blank" rel="noopener noreferrer" icon={BsLinkedin} />
+            <Footer.Icon href="https://www.linkedin.com/company/unithink-education-international/" target="_blank" rel="noopener noreferrer" icon={BsLinkedin} />
             <Footer.Icon href="https://www.instagram.com/unithink.in?igsh=MWY3eXUybzBvazczaQ==" target="_blank" rel="noopener noreferrer" icon={BsInstagram} />
             <Footer.Icon href="https://twitter.com/sheelanmisra" target="_blank" rel="noopener noreferrer" icon={BsTwitter} />
           </div>

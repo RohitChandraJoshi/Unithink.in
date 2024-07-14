@@ -38,7 +38,7 @@ function FooterCom() {
         <div className=" px-4 py-6 justify-items-center mx-auto">
           <div className="mt-4 flex space-x-6 sm:mt-0 sm:justify-center pb-5">
 
-            <Footer.Icon href="https://www.linkedin.com/in/sheelan-misra/" target="_blank" rel="noopener noreferrer" icon={BsLinkedin} />
+            <Footer.Icon href="https://www.linkedin.com/company/unithink-education-international/" target="_blank" rel="noopener noreferrer" icon={BsLinkedin} />
             <Footer.Icon href="https://www.instagram.com/unithink.in?igsh=MWY3eXUybzBvazczaQ==" target="_blank" rel="noopener noreferrer" icon={BsInstagram} />
             <Footer.Icon href="https://twitter.com/sheelanmisra" target="_blank" rel="noopener noreferrer"icon={BsTwitter} />
             {/* <Footer.Icon href="#" icon={BsGithub} /> */}

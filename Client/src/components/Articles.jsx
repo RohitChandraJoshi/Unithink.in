@@ -27,37 +27,34 @@ function Articles() {
                 <div className="flex flex-col items-center justify-center pt-10">
                     <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 max-w-6xl mx-auto">
                         <Card className="max-w-sm relative hover:scale-105 shadow-xl " imgSrc={course3}>
-                        <Link to='/faqs'>
+                        <Link to='/blog1'>
                         <Button pill gradientDuoTone='pinkToOrange' onClick={scrollToTop}  outline className="absolute top-48 right-2 z-1 border border-red-500 p-0 m-0"><HiArrowCircleRight size={30}/></Button>
                         </Link>
                             <h5 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-                                How do I choose the right destination for me ?
+                            How can you select the best courses to align with your future career goals?
                             </h5>
-                            <p className="font-normal text-gray-700 dark:text-gray-400">
-                            Understand the factors to consider when selecting a study destination that aligns with your academic, cultural, and personal preferences.
-                            </p>
                         </Card>
                         <Card className="max-w-sm relative hover:scale-105 shadow-xl " imgSrc={course2}>
-                        <Link to='/faqs'>
+                        <Link to='/blog2'>
                         <Button pill gradientDuoTone='pinkToOrange' onClick={scrollToTop}  outline className="absolute top-48 right-2 z-1 border border-red-500 p-0 m-0"><HiArrowCircleRight size={30}/></Button>
                         </Link>
                             <h5 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-                                What are the challenges of studying abroad, and how can I overcome them ?
+                            How can career interest inventories help you decide on a suitable career path?
                             </h5>
-                            <p className="font-normal text-gray-700 dark:text-gray-400">
+                            {/* <p className="font-normal text-gray-700 dark:text-gray-400">
                             Address concerns such as cultural adjustment, homesickness, language barriers, and academic differences, and discover strategies for overcoming these challenges.
-                            </p>
+                            </p> */}
                         </Card>
                         <Card className="max-w-sm relative hover:scale-105 shadow-xl " imgSrc={course1}>
-                        <Link to='/faqs'>
+                        <Link to='/blog3'>
                         <Button pill gradientDuoTone='pinkToOrange' onClick={scrollToTop}  outline className="absolute top-48 right-2 z-1 border border-red-500 p-0 m-0"><HiArrowCircleRight size={30}/></Button>
                         </Link>
                             <h5 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-                                What support services are available for international students ?
+                            What are the Tips To Improve Your Career Development ?
                             </h5>
-                            <p className="font-normal text-gray-700 dark:text-gray-400">
+                            {/* <p className="font-normal text-gray-700 dark:text-gray-400">
                             Learn about resources such as international student advisors, language support, housing assistance, and student organizations offered by universities abroad.
-                            </p>
+                            </p> */}
                         </Card>
                     </div>
                 </div>

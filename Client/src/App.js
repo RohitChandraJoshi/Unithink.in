@@ -22,6 +22,9 @@ import University from './pages/University'
 import PrivacyPolicy from './pages/policy'
 import Disclaimer from './pages/Disclaimer'
 import CourseDetails from './pages/CourseDetails'
+import Blog1 from './pages/Blog1'
+import Blog2 from './pages/Blog2'
+import Blog3 from './pages/Blog3'
 
 function App() {
   return (
@@ -47,6 +50,10 @@ function App() {
         <Route path='/privacypolicy' element={<PrivacyPolicy/>}/>
         <Route path='/countrydetail/:countryid' element={<CountryDetails />} />
         <Route path='/coursedetail/:courseId' element={<CourseDetails />} />
+        <Route path='/blog1' element={<Blog1/>}/>
+        <Route path='/blog2' element={<Blog2/>}/>
+        <Route path='/blog3' element={<Blog3/>}/>
+        
        
       
       </Routes>

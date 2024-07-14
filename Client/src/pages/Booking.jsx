@@ -200,7 +200,7 @@ function Contact() {
           <h2 className='font-bold'>GET IN TOUCH</h2>
           <p className="slogan">Connect with UniThink Education International for an initial consultation with our experts. We delve into the specifics of your situation to provide you with tailored solutions and present the best options available. Just a minute of your time is all it takes. Expect a prompt response as we prioritize your needs and strive to deliver excellence.</p>
           <div className="contact-details">
-            <p style={{ fontWeight: 'bold' }}><HiOutlinePhone /> +9900911649 <br /> +9663514338 </p>
+            <p style={{ fontWeight: 'bold' }}><HiOutlinePhone /> +919663521332 <br /> +919663514338 </p>
             <p><HiOutlineLocationMarker /> 305, Tropical Terrace, Basavanagar, <br /> Doddanekkundi, Bangalore North, Bangalore- <br /> 560037, Karnataka</p>
             <p style={{ fontWeight: 'bold' }}><HiMail /> info@unithink.in</p>
           </div>

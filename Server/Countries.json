@@ -1,3 +1,4 @@
+
 [
     {
       "top_reasons": {
@@ -9,7 +10,6 @@
       "c_id": "u007",
       "top_image": "https://firebasestorage.googleapis.com/v0/b/unithink-89630.appspot.com/o/usa_icon.png?alt=media&token=1950986f-52d3-455e-9052-4624d4c0d248",
       "c_name": "USA",
-      "c_worldrank": 1,
       "num_uni": 4298,
       "c_about": "Diverse and highly-ranked universities with a focus on innovation and research. Competitive admissions and higher tuition fees compared to some other countries."
     },
@@ -23,7 +23,6 @@
       "c_id": "f004",
       "top_image": "https://firebasestorage.googleapis.com/v0/b/unithink-89630.appspot.com/o/germany_icon.jpg?alt=media&token=9e781f97-027e-4750-b1e6-ca25587a7518",
       "c_name": "Germany",
-      "c_worldrank": 3,
       "num_uni": 371,
       "c_about": "Boasts a strong public university system with excellent reputation and free tuition for most programs. Popular for engineering, science, and humanities."
     },
@@ -37,7 +36,6 @@
       "c_id": "u005",
       "top_image": "https://firebasestorage.googleapis.com/v0/b/unithink-89630.appspot.com/o/uae_icon.jpg?alt=media&token=7612c1c3-4801-4a04-b60c-95caef2db2e7",
       "c_name": "UAE",
-      "c_worldrank": 26,
       "num_uni": 72,
       "c_about": "Offers a mix of international branch campuses and local universities, catering to specific industries and fostering innovation. Focus on English-medium programs."
     },
@@ -51,7 +49,6 @@
       "c_id": "a001",
       "top_image": "https://firebasestorage.googleapis.com/v0/b/unithink-89630.appspot.com/o/australia_icon.jpg?alt=media&token=362c26b5-08c4-4503-894a-c56d049b27fc",
       "c_name": "Australia",
-      "c_worldrank": 3,
       "num_uni": 43,
       "c_about": "Offers a vibrant and multicultural study environment with globally recognized universities. Emphasis on research and practical skills."
     },
@@ -65,7 +62,6 @@
       "c_id": "c002",
       "top_image": "https://firebasestorage.googleapis.com/v0/b/unithink-89630.appspot.com/o/canada_icon.png?alt=media&token=ae8370f4-6668-421b-b423-6f31d6f41183",
       "c_name": "Canada",
-      "c_worldrank": 2,
       "num_uni": 26,
       "c_about": "Provides affordable and high-quality education with a focus on diversity and inclusion. Strong reputation in fields like science, technology, and engineering."
     },
@@ -79,7 +75,6 @@
       "c_id": "u006",
       "top_image": "https://firebasestorage.googleapis.com/v0/b/unithink-89630.appspot.com/o/uk_icon.jpg?alt=media&token=7dd46e4e-f20f-4be3-a1a9-e9e4bd8a10b9",
       "c_name": "UK",
-      "c_worldrank": 2,
       "num_uni": 165,
       "c_about": "Houses some of the world's most prestigious universities, offering a wide range of programs and a unique cultural experience. Requires strong academic records."
     },
@@ -93,9 +88,46 @@
       "c_id": "f003",
       "top_image": "https://firebasestorage.googleapis.com/v0/b/unithink-89630.appspot.com/o/france_icon.jpg?alt=media&token=552fd516-77af-4bc2-887b-f8753d2336c5",
       "c_name": "France",
-      "c_worldrank": 5,
       "num_uni": 358,
       "c_about": "Features public universities with free tuition for EU/EEA students and diverse programs in various fields, including renowned business schools."
-    }
-  ]
-  
+    },
+    {
+      "top_reasons": {
+        "1": "Affordable tuition fees compared to Western countries.",
+        "2": "Strong emphasis on science, technology, engineering, and mathematics (STEM) programs.",
+        "3": "Rich cultural heritage and unique experiences in a vast country."
+      },
+      "_id": "",
+      "c_id": "u008",
+      "top_image": "https://firebasestorage.googleapis.com/v0/b/unithink-89630.appspot.com/o/russia_icon.png?alt=media&token=a4eb847e-81e3-4181-aa22-2b2a92827311",
+      "c_name": "Russia",
+      "num_uni": 741,
+      "c_about": "Offers affordable tuition fees, a strong emphasis on STEM programs, and a rich cultural heritage in a vast country."
+    },
+    {
+      "top_reasons": {
+        "1": "World-renowned education system and top-ranking universities.",
+        "2": "High quality of life and beautiful natural landscapes.",
+        "3": "Strong focus on research and innovation, with numerous opportunities for internships and collaborations with industries."
+      },
+      "_id": "",
+      "c_id": "u009",
+      "top_image": "https://firebasestorage.googleapis.com/v0/b/unithink-89630.appspot.com/o/switzerland_icon.png?alt=media&token=b4b671c0-0140-4e13-a4b0-6748871f965d",
+      "c_name": "Switzerland",
+      "num_uni": 43,
+      "c_about": "Known for its world-renowned education system, top-ranking universities, high quality of life, and strong focus on research and innovation."
+    },
+    {
+      "top_reasons": {
+        "1": "Affordable tuition fees and living costs compared to Western countries.",
+        "2": "Strong emphasis on technology and business programs.",
+        "3": "Rich cultural heritage and diverse experiences."
+      },
+      "_id": "",
+      "c_id": "u010",
+      "top_image": "https://firebasestorage.googleapis.com/v0/b/unithink-89630.appspot.com/o/india_icon.png?alt=media&token=ea6271ec-9ef4-4f8d-a800-a8404e78bb1c",
+      "c_name": "India",
+      "num_uni": 1000,
+      "c_about": "India offers a diverse and dynamic educational environment with a focus on technology, business, and humanities. With its rich cultural heritage, affordable tuition fees, and rapidly growing economy, India is an attractive destination for international students seeking quality education and unique experiences."
+    } 
+  ]

@@ -1,8 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
-import { Card } from 'flowbite-react';
 import { Link } from 'react-router-dom';
-import '../pages/CountryDetails.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faWhatsapp } from '@fortawesome/free-brands-svg-icons';
 import Logo from '../assets/logo.jpg'; // Ensure the correct path to the logo
@@ -37,37 +35,47 @@ function Courses() {
       </div>
       {loading ? (
         <div className="flex justify-center items-center h-screen">
-          <div className="logo-container">
-            <img src={Logo} alt="Logo" className="logo" />
+          <div className="flex items-center justify-center h-full">
+            <img src={Logo} alt="Logo" className="w-32 animate-pulse" />
           </div>
         </div>
       ) : (
         <>
-          <div className="sttt">
-            <h1 className='mb-4 font-bold text-3xl md:text-3xl lg:text-4xl text-black relative flex flex-col items-center'>
-              <span className='mb-5 mt-10'>LIST OF COURSES</span>
-              <span className='relative mt-2'>
-                <span className='mb-5 h-1 bg-orange-500 w-20 block'></span>
-              </span>
+          <div className="text-center mt-10">
+            <h1 className='mb-4 font-bold text-3xl md:text-3xl lg:text-4xl text-black'>
+              LIST OF COURSES
             </h1>
+            <div className='h-1 bg-orange-500 w-20 mx-auto mb-5'></div>
           </div>
           
-          <div className="grid gap-8 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 justify-items-center">
-            {courses && courses.map((course) => (
-              <div key={course.courseId} className="p-2 pb-10">
-                <Link to={`/coursedetail/${course.courseId}`}>
-                  <Card className="max-w-sm shadow-lg course-card hover:scale-105 transition-transform duration-300" style={{ background: 'linear-gradient(to bottom right, #f0f8ff, #e6f7ff)' }}>
-                    <img src={course.imageLink} alt={course.courseName} className="w-full h-48 object-cover" />
-                    <h5 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-white mt-4">
+          <div className="mt-4 max-w-7xl mx-auto px-4">
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 justify-items-center">
+              {courses && courses.map((course) => (
+                <Link 
+                  key={course.courseId} 
+                  to={`/coursedetail/${course.courseId}`} 
+                  className="block bg-white rounded-lg shadow-md overflow-hidden transition-transform transform hover:scale-105"
+                  style={{ width: '350px', height: '410px' }}
+                >
+                  <div className="relative overflow-hidden">
+                    <img 
+                      src={course.imageLink} 
+                      alt={course.courseName} 
+                      className="w-full h-2/3 object-cover" 
+                      style={{ height: '250px' }} // Adjust this if needed
+                    />
+                  </div>
+                  <div className="p-4">
+                    <h5 className="text-xl font-bold text-gray-900">
                       {course.courseName}
                     </h5>
-                    <p className="font-normal text-gray-700 dark:text-gray-400 mt-2">
+                    <p className="text-sm text-gray-600 mt-2">
                       {course.description}
                     </p>
-                  </Card>
+                  </div>
                 </Link>
-              </div>
-            ))}
+              ))}
+            </div>
           </div>
         </>
       )}

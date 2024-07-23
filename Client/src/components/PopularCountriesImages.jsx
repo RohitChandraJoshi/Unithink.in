@@ -51,7 +51,7 @@ function PopularCountriesImages() {
             Browse more Countries <HiArrowCircleRight size={25} />
           </Button>
         </Link>
-        <div className='mx-auto pt-10 mb-10 relative p-2' style={{ maxWidth: '100%', width: '800px' }}>
+        {/* <div className='mx-auto pt-10 mb-10 relative p-2' style={{ maxWidth: '100%', width: '800px' }}>
           <img src={videoShape} alt="" className="hidden md:block absolute inset-0 w-full h-full rounded-3xl scale-150" style={{ zIndex: -1 }} />
           <img src={videoShape2} alt="" className="absolute -top-10 -right-12" style={{ zIndex: 2 }} />
           <iframe
@@ -65,7 +65,7 @@ function PopularCountriesImages() {
             className='rounded-3xl shadow-xl'
           >
           </iframe>
-        </div>
+        </div> */}
       </div>
       {/* <div className="grid grid-cols-1 gap-6 lg:pl-52 lg:pr-52 md:grid-cols-4 mx-auto text-center justify-items-center lg:pt-20 pt-5 pb-5">
           <div className='border rounded-xl p-10 scale-105 bg-green-100 shadow-xl'>

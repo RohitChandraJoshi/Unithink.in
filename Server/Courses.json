@@ -1,4 +1,11 @@
+
 [
+  {
+    "courseId": "course010",
+    "courseName": "Medicine",
+    "imageLink": "https://firebasestorage.googleapis.com/v0/b/unithink-89630.appspot.com/o/UniThink%20courses%20images%2Fmedicine_icon.png?alt=media&token=0f71bbf4-0b2d-44c3-a247-e061e822defd",
+    "description": "Study the science and practice of diagnosing, treating, and preventing diseases."
+  },
   {
     "courseId": "course001",
     "courseName": "Business Administration",
@@ -52,11 +59,5 @@
     "courseName": "Law",
     "imageLink": "https://firebasestorage.googleapis.com/v0/b/unithink-89630.appspot.com/o/UniThink%20courses%20images%2Flaw_icon.png?alt=media&token=02d987b7-25b6-4e8d-9adb-14b129a83dc7",
     "description": "Learn about legal principles, systems, and practices."
-  },
-  {
-    "courseId": "course010",
-    "courseName": "Medicine",
-    "imageLink": "https://firebasestorage.googleapis.com/v0/b/unithink-89630.appspot.com/o/UniThink%20courses%20images%2Fmedicine_icon.png?alt=media&token=0f71bbf4-0b2d-44c3-a247-e061e822defd",
-    "description": "Study the science and practice of diagnosing, treating, and preventing diseases."
-  }
+  }
 ]

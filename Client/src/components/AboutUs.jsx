@@ -18,16 +18,17 @@ function AboutUs() {
                         <div className='p-16'>
                           
                             
-                            <h5 className="text-4xl font-bold tracking-tight text-gray-900 dark:text-white pb-4 ">
-                                Over 15 Years in <span className='text-red-500'> Placing Students </span> all over the world
+                            <h5 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-white pb-4 ">
+                            "I fear not the man who has practiced <span className='text-red-500'> 10,000 kicks once, but I fear the man who has </span> practiced one kick 10,000 times." - Bruce Lee
                             </h5>
                             <p className="font-normal text-gray-500 dark:text-gray-400 pb-4">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum velit, quis, blanditiis dignissimos temporibus tempore, quidem officia quo amet odit nostrum. Beatae nihil sunt consequuntur et odit repellat porro quidem!
+                            Our Expertise -
                             </p>
                             <div className=''>
-                                <p className='flex gap-2'><BsCheck2All /> Education Consultancy</p>
-                                <p className='flex gap-2'><BsCheck2All /> Business Consultancy</p>
-                                <p className='flex gap-2'><BsCheck2All /> Mentorship</p>
+                                <p className='flex gap-2'><BsCheck2All /> Education & Career Counselling</p>
+                                <p className='flex gap-2'><BsCheck2All /> Find Your University & Course</p>
+                                <p className='flex gap-2'><BsCheck2All /> Skilling Academy</p>
+                                <p className='flex gap-2'><BsCheck2All /> Education & Business Counsultancy</p>
                             </div>
                         </div>
                     </div>

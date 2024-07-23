@@ -59,7 +59,7 @@ function Articles() {
                     </div>
                 </div>
                 <Link to='/faqs'>
-                    <Button outline size='lg' onClick={scrollToTop}  gradientDuoTone="pinkToOrange" pill className='mx-auto justify-items-center mt-12 hover:scale-105' style={{ zIndex: 1, marginBottom: '60px' }}>Browse more FAQs <HiArrowCircleRight size={25} /></Button>
+                    <Button outline size='lg' onClick={scrollToTop}  gradientDuoTone="pinkToOrange" pill className='mx-auto justify-items-center mt-12 hover:scale-105' style={{ zIndex: 1, marginBottom: '60px' }}>Browse FAQs <HiArrowCircleRight size={25} /></Button>
                 </Link>
             </div>
             

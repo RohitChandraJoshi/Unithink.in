@@ -9,7 +9,7 @@ function ImageModal({ imageSrc }) {
 
     const handleImageClick = () => {
         handleClose();
-        navigate('/booking'); // Update the path if needed
+        navigate('coursedetail/course010'); // Update the path if needed
     };
 
     return (

@@ -8,6 +8,7 @@ import Articles from '../components/Articles'
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import Services from '../components/Services'
+import PopularCourses from '../components/PopularCourses'
 function Home() {
 
   return (
@@ -20,6 +21,7 @@ function Home() {
         {/* <Categories/> */}
         <AboutUs/>
         <PopularCountriesImages/>
+        <PopularCourses/>
         <Articles/>
     </div>
   )

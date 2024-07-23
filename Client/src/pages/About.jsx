@@ -112,14 +112,14 @@ function About() {
     <div className="absolute inset-0 flex flex-col justify-center items-center">
         <div className="sttt">
             <h1 className='text-3xl md:text-4xl lg:text-5xl xl:text-9xl text-black relative flex flex-col items-center'>
-                <span className='mt-10'>About us</span>
+                <span className='mb-1'>About us</span>
                 <span className='relative mt-2'>
-                    <span className='h-1 bg-orange-500 w-20 block'></span>
+                    <span className='h-1 mb-10 bg-orange-500 w-20 block'></span>
                 </span>
             </h1>
         </div>
         <div className="discover">
-        <p className="mb-10 w-full pt-3 md:pt-5 lg:pt-10 lg:pb-3 lg:text-base 1xl:text-xl 2xl:text-2xl pt-3 text-center text-gray-1000">UEI: Bridging education and business realms, fostering collaboration for optimized processes and resource development."</p>
+        {/* <p className="mb-10 w-full pt-3 md:pt-5 lg:pt-10 lg:pb-3 lg:text-base 1xl:text-xl 2xl:text-2xl pt-3 text-center text-gray-1000">UEI: Bridging education and business realms, fostering collaboration for optimized processes and resource development."</p> */}
         </div>
         <Link to='/booking'>
             <Button size="xl" outline pill gradientDuoTone="pinkToOrange" className="text-xs lg:text-sm z-10" onClick={scrollToTop}>Meet us at</Button>
@@ -144,7 +144,7 @@ function About() {
         />
       </div>
       <div className="md:w-2/3 p-6">
-        <p className="lg:text-lg md:text-base text-sm text-center md:text-left text-neutral-700 font-medium leading-relaxed">
+        <p className="lg:text-lg md:text-base text-m text-center md:text-left text-neutral-800 font-medium leading-relaxed">
           Unithink Education International Pvt. Ltd. acts as your global education and career mentor, providing expert guidance in university selection, admissions, and support services on a worldwide scale. With over 22 years of experience in international education, we specialize in counseling, university pairing, application aid, visa support, scholarship assistance, and immigration guidance. Our vast database comprises 350+ universities, and we extend our services to students across continents, covering countries such as the US, Canada, UK, Australia, France, Germany, Netherlands, UAE, Japan, and India.
         </p>
       </div>

@@ -85,7 +85,7 @@ const University = () => {
             // Update statistics with increasing count
             setStatistics(prevStats => ({
                 ...prevStats,
-                universitiesTied: prevStats.universitiesTied < 1500 ? prevStats.universitiesTied + 20 : 1500,
+                universitiesTied: prevStats.universitiesTied < 350 ? prevStats.universitiesTied + 5 : 350,
                 coursesAvailable: prevStats.coursesAvailable < 25 ? prevStats.coursesAvailable + 1 : 25,
                 satisfactionRate: prevStats.satisfactionRate < 2500 ? prevStats.satisfactionRate + 30 : 2500,
                 visaAcceptance: prevStats.visaAcceptance < 98 ? prevStats.visaAcceptance + 1 : 98

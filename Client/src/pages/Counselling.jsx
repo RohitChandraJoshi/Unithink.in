@@ -297,129 +297,37 @@ const Counselling = () => {
                     </div>
                     
                     </div>
-                    <div className="w-full mx-auto mb-20">
-        <div className="w-1/4 border-b border-black mx-auto">
-          <h1 className=" uppercase lg:text-4xl md:text-4xl text-2xl text-center lg:p-4 p-2">services offered</h1>
+                    <div className="w-full mx-auto mt-10">
+  <div className="w-1/2 border-b border-black mx-auto">
+    <h1 className="uppercase lg:text-6xl md:text-4xl text-2xl text-center lg:p-4 p-2">services offered</h1>
+  </div>
+  <div className="mt-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4"> 
+    {/* Service Card */}
+    {[
+      { img: service1, title: "Career Guidance", description: "Offering personalized counseling to help students explore their interests, strengths, and potential career paths, guiding them towards fulfilling professional futures." },
+      { img: service2, title: "University Selection", description: "Assisting students in identifying the most suitable universities based on their academic background, interests, and career goals." },
+      { img: service3, title: "Admission Assistance", description: "Providing guidance and support throughout the university application process, including application strategy, documentation, and submission." },
+      { img: service4, title: "Visa Guidance", description: "Assisting students with visa application procedures, documentation requirements, and interview preparation to facilitate a smooth transition to their chosen study destination." },
+      { img: service5, title: "Scholarship Support", description: "Helping students explore scholarship opportunities and providing guidance on application procedures to secure financial assistance for their education." },
+      { img: service6, title: "Immigration Assistance", description: "Supporting students with immigration processes, including residency permits, work permits, and other legal requirements associated with studying abroad." },
+      { img: service7, title: "Test Preparation", description: "Offering resources and guidance for standardized tests such as the SAT, ACT, GRE, GMAT, TOEFL, and IELTS to help students achieve their desired scores." },
+      { img: service8, title: "Application Review", description: "Reviewing and providing feedback on students' application materials, including personal statements, essays, and resumes, to enhance their chances of acceptance." },
+      { img: service9, title: "Alumni Network", description: "Connecting students with alumni networks and resources to facilitate networking opportunities and career development." },
+      { img: service10, title: "Post-Admission Support", description: "Providing ongoing support to students even after admission, including orientation assistance, academic advising, and adjustment support." },
+    ].map((service, index) => (
+      <div key={index} className="bg-white rounded-lg shadow-md overflow-hidden transition-transform transform hover:scale-105">
+        <div className="relative overflow-hidden">
+          <img src={service.img} alt={service.title} className="w-full h-40 object-cover" />
         </div>
-      <div className="mt-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4"> 
-              {/* Service 1 */}
-              <div className="bg-white rounded-lg shadow-md overflow-hidden transition-transform transform hover:scale-105">
-                <div className="relative overflow-hidden">
-                  <img src={service1} alt="Service 1" className="w-full h-40 object-cover" />
-                  <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
-                    <div className="text-white text-center">
-                      <h2 className="text-lg font-semibold">Career Guidance</h2>
-                      <p className="text-sm text-gray-200">Offering personalized counseling to help students explore their interests, strengths, and potential career paths, guiding them towards fulfilling professional futures.</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="bg-white rounded-lg shadow-md overflow-hidden transition-transform transform hover:scale-105">
-                <div className="relative overflow-hidden">
-                  <img src={service2} alt="Service 1" className="w-full h-40 object-cover" />
-                  <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
-                    <div className="text-white text-center">
-                      <h2 className="text-lg font-semibold">University Selection</h2>
-                      <p className="text-sm text-gray-200">Assisting students in identifying the most suitable universities based on their academic background, interests, and career goals.</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="bg-white rounded-lg shadow-md overflow-hidden transition-transform transform hover:scale-105">
-                <div className="relative overflow-hidden">
-                  <img src={service3} alt="Service 1" className="w-full h-40 object-cover" />
-                  <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
-                    <div className="text-white text-center">
-                      <h2 className="text-lg font-semibold">Admission Assistance</h2>
-                      <p className="text-sm text-gray-200">Providing guidance and support throughout the university application process, including application strategy, documentation, and submission.</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="bg-white rounded-lg shadow-md overflow-hidden transition-transform transform hover:scale-105">
-                <div className="relative overflow-hidden">
-                  <img src={service4} alt="Service 1" className="w-full h-40 object-cover" />
-                  <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
-                    <div className="text-white text-center">
-                      <h2 className="text-lg font-semibold">Visa Guidance</h2>
-                      <p className="text-sm text-gray-200">Assisting students with visa application procedures, documentation requirements, and interview preparation to facilitate a smooth transition to their chosen study destination.</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="bg-white rounded-lg shadow-md overflow-hidden transition-transform transform hover:scale-105">
-                <div className="relative overflow-hidden">
-                  <img src={service5} alt="Service 1" className="w-full h-40 object-cover" />
-                  <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
-                    <div className="text-white text-center">
-                      <h2 className="text-lg font-semibold">Scholarship Support</h2>
-                      <p className="text-sm text-gray-200">Helping students explore scholarship opportunities and providing guidance on application procedures to secure financial assistance for their education.</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="bg-white rounded-lg shadow-md overflow-hidden transition-transform transform hover:scale-105">
-                <div className="relative overflow-hidden">
-                  <img src={service6} alt="Service 1" className="w-full h-40 object-cover" />
-                  <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
-                    <div className="text-white text-center">
-                      <h2 className="text-lg font-semibold">Immigration Assistance</h2>
-                      <p className="text-sm text-gray-200">Supporting students with immigration processes, including residency permits, work permits, and other legal requirements associated with studying abroad.</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="bg-white rounded-lg shadow-md overflow-hidden transition-transform transform hover:scale-105">
-                <div className="relative overflow-hidden">
-                  <img src={service7} alt="Service 1" className="w-full h-40 object-cover" />
-                  <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
-                    <div className="text-white text-center">
-                      <h2 className="text-lg font-semibold">Test Preparation</h2>
-                      <p className="text-sm text-gray-200">Offering resources and guidance for standardized tests such as the SAT, ACT, GRE, GMAT, TOEFL, and IELTS to help students achieve their desired scores.</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="bg-white rounded-lg shadow-md overflow-hidden transition-transform transform hover:scale-105">
-                <div className="relative overflow-hidden">
-                  <img src={service8} alt="Service 1" className="w-full h-40 object-cover" />
-                  <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
-                    <div className="text-white text-center">
-                      <h2 className="text-lg font-semibold">Application Review</h2>
-                      <p className="text-sm text-gray-200">Reviewing and providing feedback on students' application materials, including personal statements, essays, and resumes, to enhance their chances of acceptance.</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
+        <div className="p-4">
+          <h2 className="text-center text-lg font-semibold text-gray-800">{service.title}</h2>
+          <p className="text-center text-sm text-gray-600">{service.description}</p>
+        </div>
+      </div>
+    ))}
+  </div>
+</div>
 
-             
-              {/* Service 2 */}
-              {/* Add other service cards similarly */}
-            
-            <div className="bg-white rounded-lg shadow-md overflow-hidden transition-transform transform hover:scale-105">
-                <div className="relative overflow-hidden">
-                  <img src={service9} alt="Service 1" className="w-full h-40 object-cover" />
-                  <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
-                    <div className="text-white text-center">
-                      <h2 className="text-lg font-semibold">Alumni Network</h2>
-                      <p className="text-sm text-gray-200">Connecting students with alumni networks and resources to facilitate networking opportunities and career development.</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="bg-white rounded-lg shadow-md overflow-hidden transition-transform transform hover:scale-105">
-                <div className="relative overflow-hidden">
-                  <img src={service10} alt="Service 1" className="w-full h-40 object-cover" />
-                  <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
-                    <div className="text-white text-center">
-                      <h2 className="text-lg font-semibold">Post-Admission Support</h2>
-                      <p className="text-sm text-gray-200">Providing ongoing support to students even after admission, including orientation assistance, academic advising, and adjustment support.</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              </div>
-      </div>           
     </div>
   );
 };

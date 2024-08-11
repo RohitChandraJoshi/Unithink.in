@@ -1,32 +1,31 @@
-import React, { useState } from 'react';
-import { BsEmojiSmile, BsEmojiFrown } from 'react-icons/bs';
+import React, { useState } from "react";
+import { BsEmojiSmile, BsEmojiFrown } from "react-icons/bs";
 
 const quizQuestions = [
-
   {
     question: "The Great Wall of China is visible from space.",
     options: ["True", "False"],
-    answer: "False"
+    answer: "False",
   },
   {
     question: "Australia is both a country and a continent.",
     options: ["True", "False"],
-    answer: "True"
+    answer: "True",
   },
   {
     question: "The Amazon Rainforest produces 20% of the world's oxygen.",
     options: ["True", "False"],
-    answer: "True"
+    answer: "True",
   },
   {
     question: "Mount Everest is located in Nepal.",
     options: ["True", "False"],
-    answer: "True"
+    answer: "True",
   },
   {
     question: "TThe currency of Japan is the Yuan.",
     options: ["True", "False"],
-    answer: "False"
+    answer: "False",
   },
   // {
   //   question: "True or False: Africa is the largest continent by land area.",
@@ -51,27 +50,32 @@ const quizQuestions = [
   {
     question: "Which country has the most natural lakes?",
     options: ["A. Canada", "B. Brazil", "C. Russia", "D. United States"],
-    answer: "A. Canada"
+    answer: "A. Canada",
   },
   {
     question: "What is the capital city of Australia?",
     options: ["A. Sydney", "B. Melbourne", "C. Canberra", "D. Brisbane"],
-    answer: "C. Canberra"
+    answer: "C. Canberra",
   },
   {
     question: "Which country is known as the Land of the Rising Sun?",
     options: ["A. China", "B. Japan", "C. Thailand", "D. South Korea"],
-    answer: "B. Japan"
+    answer: "B. Japan",
   },
   {
     question: "Which is the smallest country in the world by land area?",
-    options: ["A. Monaco", "B. Vatican City", "C. San Marino", "D. Liechtenstein"],
-    answer: "B. Vatican City"
+    options: [
+      "A. Monaco",
+      "B. Vatican City",
+      "C. San Marino",
+      "D. Liechtenstein",
+    ],
+    answer: "B. Vatican City",
   },
   {
     question: "In which year did the Titanic sink?",
     options: ["A. 1905", "B. 1910", "C. 1912", "D. 1915"],
-    answer: "C. 1912"
+    answer: "C. 1912",
   },
   // {
   //   question: "Which river is the longest in the world?",
@@ -138,32 +142,33 @@ const quizQuestions = [
 
 function Quiz() {
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
-  const [selectedOption, setSelectedOption] = useState('');
-  const [feedback, setFeedback] = useState('');
+  const [selectedOption, setSelectedOption] = useState("");
+  const [feedback, setFeedback] = useState("");
   const [score, setScore] = useState(0);
 
   const handleOptionClick = (option) => {
     setSelectedOption(option);
     if (option === quizQuestions[currentQuestionIndex].answer) {
-      setFeedback('Correct!');
+      setFeedback("Correct!");
       setScore(score + 1);
     } else {
-      setFeedback('Incorrect');
+      setFeedback("Incorrect");
     }
   };
 
   const handleNextQuestion = () => {
-    setFeedback('');
-    setSelectedOption('');
+    setFeedback("");
+    setSelectedOption("");
     setCurrentQuestionIndex((prevIndex) => prevIndex + 1);
   };
 
   if (currentQuestionIndex >= quizQuestions.length) {
     return (
       <div className="p-8 bg-white rounded-xl shadow-md w-full max-w-lg mx-auto text-center">
-      
         <h2 className="text-2xl font-bold mb-4">Quiz Complete!</h2>
-        <p className="text-lg">Your score: {score} / {quizQuestions.length}</p>
+        <p className="text-lg">
+          Your score: {score} / {quizQuestions.length}
+        </p>
       </div>
     );
   }
@@ -172,7 +177,9 @@ function Quiz() {
 
   return (
     <div className="p-8 bg-white rounded-xl shadow-md w-full max-w-lg mx-auto">
-        <p className="mb-5 text-gray-400 font-semibold">Test Your World Knowledge</p>
+      <p className="mb-5 text-gray-400 font-semibold">
+        Test Your World Knowledge
+      </p>
       <h5 className="text-lg font-bold">{question}</h5>
       <ul className="mt-4">
         {options.map((option, index) => (
@@ -181,19 +188,20 @@ function Quiz() {
               className={`px-4 py-2 rounded-lg w-full text-left ${
                 selectedOption === option
                   ? option === quizQuestions[currentQuestionIndex].answer
-                    ? 'bg-green-500 text-white'
-                    : 'bg-red-500 text-white'
-                  : 'bg-gray-200 text-gray-700'
+                    ? "bg-green-500 text-white"
+                    : "bg-red-500 text-white"
+                  : "bg-gray-200 text-gray-700"
               }`}
               onClick={() => handleOptionClick(option)}
               disabled={!!selectedOption} // Disable button after selection
             >
               {option}
-              {selectedOption === option && (
-                option === quizQuestions[currentQuestionIndex].answer
-                  ? <BsEmojiSmile className="inline ml-2" />
-                  : <BsEmojiFrown className="inline ml-2" />
-              )}
+              {selectedOption === option &&
+                (option === quizQuestions[currentQuestionIndex].answer ? (
+                  <BsEmojiSmile className="inline ml-2" />
+                ) : (
+                  <BsEmojiFrown className="inline ml-2" />
+                ))}
             </button>
           </li>
         ))}

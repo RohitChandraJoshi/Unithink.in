@@ -1,6 +1,5 @@
 import emailjs from 'emailjs-com';
 
-// Initialize emailjs with your user ID directly
 emailjs.init('q_m5ggW5G47ZuLiW-');
 
 export const sendEmail = (formData) => {

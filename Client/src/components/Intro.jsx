@@ -7,7 +7,11 @@ const Intro = () => {
       <div className="max-w-[1600px] mx-auto lg:py-16 bg-white border-b">
         <div className="w-10/12 mx-auto lg:flex">
           <div className="lg:w-6/12 flex items-start justify-start bg-white">
-            <img className="w-full sm:w-3/4 md:w-2/3 lg:w-full" src={intro_png} alt="Intro" />
+            <img
+              className="w-full sm:w-3/4 md:w-2/3 lg:w-full"
+              src={intro_png}
+              alt="Intro"
+            />
           </div>
           <div className="lg:px-16 flex flex-col justify-center gap-10 bg-white">
             {/* Heading */}

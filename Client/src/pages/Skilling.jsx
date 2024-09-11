@@ -5,53 +5,53 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { ToastContainer, toast } from "react-toastify";
 import { faWhatsapp } from "@fortawesome/free-brands-svg-icons";
 import Logo from "../assets/logo.jpg"; // Ensure the correct path to the logo
-import skillingtopimage from '../assets/skillingtopimage.png'
+import skillingtopimage from '../assets/skillingtopimage.png';
 
 function Skilling() {
   const [courses, setCourses] = useState([]);
-  const [loading, setLoading] = useState(true); // Loading state
-  const [selectedCategory, setSelectedCategory] = useState("All"); // State to track selected category
+  const [loading, setLoading] = useState(true);
+  const [selectedCategory, setSelectedCategory] = useState("All");
 
   useEffect(() => {
     const fetchData = async () => {
       try {
         const response = await axios.get(
-          "http://localhost:5000/api/skilling/"
+          "https://unithink-backend.vercel.app/api/skilling/"
         );
         const responseData = response.data;
         setCourses(responseData);
-        setLoading(false); // Set loading to false after data is fetched
+        setLoading(false);
       } catch (error) {
         console.log(error);
-        setLoading(false); // Ensure loading is stopped on error as well
+        setLoading(false);
       }
     };
     fetchData();
   }, []);
 
-  // Function to filter courses based on selected category
-  const filteredCourses = selectedCategory === "All"
-    ? courses
-    : courses.filter(course => course.category === selectedCategory);
+  const filteredCourses =
+    selectedCategory === "All"
+      ? courses
+      : courses.filter((course) => course.category === selectedCategory);
 
   return (
-    <div className="px-8 bg-white">
-            <ToastContainer />
+    <div className="px-4 md:px-8 bg-white">
+      <ToastContainer />
 
-<div className="text-center mt-10">
-  <h1 className="mb-4 font-bold text-3xl md:text-3xl lg:text-4xl text-black">
-    Achieve Your Dreams: Skilling Academy
-  </h1>
-  <div className="h-1 bg-orange-500 w-20 mx-auto mb-5"></div>
-  <div className="flex justify-center items-center">
-    <img className="w-auto h-60" src={skillingtopimage} alt="skilling top image" />
-  </div>
-  <p className="text-center text-gray-900">
-    Take the first step towards a successful future. Schedule a free
-    counselling session with us and start your journey towards achieving
-    your education and career goals.
-  </p>
-</div>
+      <div className="text-center mt-10">
+        <h1 className="mb-4 font-bold text-2xl md:text-3xl lg:text-4xl text-black">
+          Achieve Your Dreams: Skilling Academy
+        </h1>
+        <div className="h-1 bg-orange-500 w-20 mx-auto mb-5"></div>
+        <div className="flex justify-center items-center">
+          <img className="w-200 max-w-xs md:max-w-full h-auto md:h-80" src={skillingtopimage} alt="skilling top image" />
+        </div>
+        <p className="text-center text-gray-900 text-sm md:text-base">
+          Take the first step towards a successful future. Schedule a free
+          counselling session with us and start your journey towards achieving
+          your education and career goals.
+        </p>
+      </div>
 
       <div className="mt-10">
         <Link
@@ -65,6 +65,7 @@ function Skilling() {
           </button>
         </Link>
       </div>
+
       {loading ? (
         <div className="flex justify-center items-center h-screen">
           <div className="flex items-center justify-center h-full">
@@ -73,42 +74,35 @@ function Skilling() {
         </div>
       ) : (
         <>
-          {/* <div className="text-center mt-10">
-            <h1 className="mb-4 font-bold text-3xl md:text-3xl lg:text-3xl text-black">
-              LIST OF COURSES
-            </h1>
-            <div className="h-1 bg-orange-500 w-20 mx-auto mb-5"></div>
-          </div> */}
-
           {/* Category Selection */}
-          <div className="flex justify-center space-x-4 mt-5">
+          <div className="flex flex-wrap justify-center space-x-2 md:space-x-4 mt-5">
             <button
               onClick={() => setSelectedCategory("All")}
-              className={`px-4 py-2 rounded-lg ${selectedCategory === "All" ? "bg-orange-500 text-white" : "bg-gray-200 text-black"}`}
+              className={`px-3 py-2 rounded-lg text-sm md:text-base ${selectedCategory === "All" ? "bg-orange-500 text-white" : "bg-gray-200 text-black"}`}
             >
               All
             </button>
             <button
               onClick={() => setSelectedCategory("Students")}
-              className={`px-4 py-2 rounded-lg ${selectedCategory === "Students" ? "bg-orange-500 text-white" : "bg-gray-200 text-black"}`}
+              className={`px-3 py-2 rounded-lg text-sm md:text-base ${selectedCategory === "Students" ? "bg-orange-500 text-white" : "bg-gray-200 text-black"}`}
             >
               Students
             </button>
             <button
               onClick={() => setSelectedCategory("Professional Certification")}
-              className={`px-4 py-2 rounded-lg ${selectedCategory === "Professional Certification" ? "bg-orange-500 text-white" : "bg-gray-200 text-black"}`}
+              className={`px-3 py-2 rounded-lg text-sm md:text-base ${selectedCategory === "Professional Certification" ? "bg-orange-500 text-white" : "bg-gray-200 text-black"}`}
             >
               Professional Certification
             </button>
             <button
               onClick={() => setSelectedCategory("Become Corporate Ready")}
-              className={`px-4 py-2 rounded-lg ${selectedCategory === "Become Corporate Ready" ? "bg-orange-500 text-white" : "bg-gray-200 text-black"}`}
+              className={`mt-2 md:mt-0 px-3 py-2 rounded-lg text-sm md:text-base ${selectedCategory === "Become Corporate Ready" ? "bg-orange-500 text-white" : "bg-gray-200 text-black"}`}
             >
               Become Corporate Ready
             </button>
             <button
               onClick={() => setSelectedCategory("Entrepreneurship")}
-              className={`px-4 py-2 rounded-lg ${selectedCategory === "Entrepreneurship" ? "bg-orange-500 text-white" : "bg-gray-200 text-black"}`}
+              className={`mt-2 md:mt-0 px-3 py-2 rounded-lg text-sm md:text-base ${selectedCategory === "Entrepreneurship" ? "bg-orange-500 text-white" : "bg-gray-200 text-black"}`}
             >
               Entrepreneurship
             </button>
@@ -121,24 +115,24 @@ function Skilling() {
                   key={course.skillId}
                   to={`/skillingdetails/${course.skillId}`}
                   className="block bg-white rounded-lg shadow-md overflow-hidden transition-transform transform hover:scale-105"
-                  style={{ width: "350px", height: "450px" }} // Adjust height to accommodate price
+                  style={{ width: "100%", maxWidth: "350px", height: "auto" }}
                 >
                   <div className="relative overflow-hidden">
                     <img
                       src={course.imageLink}
                       alt={course.courseName}
-                      className="w-full h-2/3 object-cover"
-                      style={{ height: "250px" }} // Adjust this if needed
+                      className="w-full object-cover"
+                      style={{ height: "200px" }}
                     />
                   </div>
                   <div className="p-4">
-                    <h5 className="text-xl font-bold text-gray-900">
+                    <h5 className="text-lg md:text-xl font-bold text-gray-900">
                       {course.courseName}
                     </h5>
-                    <p className="text-sm text-gray-600 mt-2">
+                    <p className="text-sm md:text-base text-gray-600 mt-2">
                       {course.description}
                     </p>
-                    <p className="text-lg font-semibold text-orange-500 mt-2">
+                    <p className="text-md font-semibold text-orange-500 mt-2">
                       Price: {course.price}
                     </p>
                   </div>

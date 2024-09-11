@@ -12,14 +12,17 @@ function Header() {
   const [searchQuery, setSearchQuery] = useState("");
   const [filteredCountries, setFilteredCountries] = useState([]);
   const hardcodedCountries = [
+    { c_id: "u007", c_name: "USA" },
     { c_id: "f004", c_name: "Germany" },
-    { c_id: "u006", c_name: "United Kingdom" },
+    { c_id: "u005", c_name: "UAE" },
     { c_id: "a001", c_name: "Australia" },
-    { c_id: "f003", c_name: "France" },
-    { c_id: "u007", c_name: "United States of America" },
-    { c_id: "u005", c_name: "United Arab Emirates" },
     { c_id: "c002", c_name: "Canada" },
-  ];
+    { c_id: "u006", c_name: "UK" },
+    { c_id: "f003", c_name: "France" },
+    { c_id: "u008", c_name: "Russia" },
+    { c_id: "u009", c_name: "Switzerland" },
+    { c_id: "u010", c_name: "India" },
+  ];  
 
   useEffect(() => {
     const handleScroll = () => {

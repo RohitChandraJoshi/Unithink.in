@@ -7,7 +7,7 @@ const BlogDetails = () => {
   const [blog, setBlog] = useState(null);
 
   useEffect(() => {
-    fetch(`http://localhost:5000/api/blogDetails/${id}`)
+    fetch(`https://unithink-backend.vercel.app/api/blogDetails/${id}`)
       .then((response) => {
         if (!response.ok) {
           throw new Error(`HTTP error! Status: ${response.status}`);

@@ -61,7 +61,7 @@ const RegisterForm = () => {
     try {
       setLoading(true);
       const response = await axios.post(
-        "http://localhost:5000/api/register",
+        "https://unithink-backend.vercel.app/api/register",
         formData
       );
       await sendRegistrationEmail(formData); 

@@ -14,7 +14,7 @@ function SkillingDetails() {
     const fetchCourseDetails = async () => {
       try {
         const response = await axios.get(
-          `http://localhost:5000/api/skillingDetails/${skillId}`
+          `https://unithink-backend.vercel.app/api/skillingDetails/${skillId}`
         );
         setCourseDetails(response.data);
       } catch (error) {

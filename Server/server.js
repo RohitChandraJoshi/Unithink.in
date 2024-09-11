@@ -20,6 +20,11 @@ const faqRoutes = require('./faq');
 const coursesRoutes = require('./Courses'); 
 const coursesDetailsRoutes = require('./CoursesDetails'); 
 const contactRoutes = require('./Contact'); 
+const registrationRoutes = require('./Registration'); // Add this line
+const skillingRoute = require('./Skilling');
+const blogRoutes = require('./Blogs');  // Add this line
+const blogDetailsRoutes = require('./BlogsDetails');  // Add this l
+const SkillDetailsRoutes = require('./SkillsDetails')
 
 app.use('/api/country', countryRoutes);
 app.use('/api/countryDetails', countryDetailsRoutes);
@@ -27,6 +32,11 @@ app.use('/api/faq', faqRoutes);
 app.use('/api/courses', coursesRoutes);
 app.use('/api/coursesdetails', coursesDetailsRoutes);
 app.use('/api/consultation', contactRoutes); 
+app.use('/api/register', registrationRoutes); // Add this line
+app.use('/api/skilling', skillingRoute);
+app.use('/api/blogs', blogRoutes);  // Add this line to serve blogs list
+app.use('/api/blogDetails', blogDetailsRoutes);  // Add this line to serve blog details
+app.use('/api/skillingDetails', SkillDetailsRoutes)
 
 app.use((err, req, res, next) => {
   console.error(err.stack);

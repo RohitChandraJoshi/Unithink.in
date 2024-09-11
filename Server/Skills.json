@@ -1,0 +1,131 @@
+
+[
+  {
+    "skillId": "course010",
+    "courseName": "GST Program",
+    "imageLink": "https://firebasestorage.googleapis.com/v0/b/unithink-89630.appspot.com/o/certification%20images%2Fgst%20program.png?alt=media&token=b1c9a968-d6ea-40e6-ada9-2a496c5eb52b",
+    "description": "Master GST regulations and compliance for business success.",
+    "price": "₹5000",
+    "category": "Professional Certification"
+  },  
+  {
+    "skillId": "course001",
+    "courseName": "Digital Marketing Training",
+    "imageLink": "https://firebasestorage.googleapis.com/v0/b/unithink-89630.appspot.com/o/certification%20images%2Fdigital%20marketing%20icon.png?alt=media&token=2d2ee3ef-8b32-4e3f-b22d-33513d10d71d",
+    "description": " Unlock the secrets of online marketing to boost your career.",
+    "price": "₹5000",
+    "category": "Entrepreneurship"
+  },
+  {
+    "skillId": "course002",
+    "courseName": "Linkedin for Personal / Corporate Branding",
+    "imageLink": "https://firebasestorage.googleapis.com/v0/b/unithink-89630.appspot.com/o/certification%20images%2Flinkedin%20program.png?alt=media&token=de8c5042-aa3a-4005-ac8f-83ff6148fd8e",
+    "description": "Optimize your LinkedIn profile for professional networking and growth. ",
+    "price": "₹5000",
+    "category": "Become Corporate Ready"
+  },
+  {
+    "skillId": "course003",
+    "courseName": "Advance Excel with AI",
+    "imageLink": "https://firebasestorage.googleapis.com/v0/b/unithink-89630.appspot.com/o/certification%20images%2FAdvance%20Excel%20with%20AI%20iconprogram.png?alt=media&token=acfb295d-5120-421e-829c-0d0d3c191582",
+    "description": "Leverage advanced Excel techniques with AI for data-driven decisions.",
+    "price": "₹5000",
+    "category": "Professional Certification"
+  },
+  {
+    "skillId": "course031",
+    "courseName": "Advance Excel with AI",
+    "imageLink": "https://firebasestorage.googleapis.com/v0/b/unithink-89630.appspot.com/o/certification%20images%2FAdvance%20Excel%20with%20AI%20iconprogram.png?alt=media&token=acfb295d-5120-421e-829c-0d0d3c191582",
+    "description": "Leverage advanced Excel techniques with AI for data-driven decisions.",
+    "price": "₹5000",
+    "category": "Students"
+  },
+  {
+    "skillId": "course004",
+    "courseName": "Introduction to AI",
+    "imageLink": "https://firebasestorage.googleapis.com/v0/b/unithink-89630.appspot.com/o/certification%20images%2Fintro%20to%20ai%20icon.png?alt=media&token=498b7fee-a6fb-4ad7-a8c7-5887c493d33c",
+    "description": "Discover the fundamentals of Artificial Intelligence and its applications.",
+    "price": "₹5000",
+    "category": "Become Corporate Ready"
+  },
+  {
+    "skillId": "course041",
+    "courseName": "Introduction to AI",
+    "imageLink": "https://firebasestorage.googleapis.com/v0/b/unithink-89630.appspot.com/o/certification%20images%2Fintro%20to%20ai%20icon.png?alt=media&token=498b7fee-a6fb-4ad7-a8c7-5887c493d33c",
+    "description": "Discover the fundamentals of Artificial Intelligence and its applications.",
+    "price": "₹5000",
+    "category": "Students"
+  },
+  {
+    "skillId": "course005",
+    "courseName": "Goal Setting",
+    "imageLink": "https://firebasestorage.googleapis.com/v0/b/unithink-89630.appspot.com/o/certification%20images%2Fgoal%20setting%20icon.png?alt=media&token=90c86e38-0cc1-4406-8bc4-a49d0a231e0b",
+    "description": "Learn effective strategies to set and achieve your personal and professional goals.",
+    "price": "₹5000",
+    "category": "Students"
+  },
+  {
+    "skillId": "course051",
+    "courseName": "Goal Setting",
+    "imageLink": "https://firebasestorage.googleapis.com/v0/b/unithink-89630.appspot.com/o/certification%20images%2Fgoal%20setting%20icon.png?alt=media&token=90c86e38-0cc1-4406-8bc4-a49d0a231e0b",
+    "description": "Learn effective strategies to set and achieve your personal and professional goals.",
+    "price": "₹5000",
+    "category": "Professional Certification"
+  },
+  {
+    "skillId": "course006",
+    "courseName": "Design Thinking",
+    "imageLink": "https://firebasestorage.googleapis.com/v0/b/unithink-89630.appspot.com/o/certification%20images%2Fdesign%20thinkingsetting%20icon.png?alt=media&token=5cbe0884-4382-4079-9a5a-ec42b94fdd13",
+    "description": "Innovate and solve complex problems with design thinking methodologies.",
+    "price": "₹5000",
+    "category": "Students"
+  },
+  {
+    "skillId": "course061",
+    "courseName": "Design Thinking",
+    "imageLink": "https://firebasestorage.googleapis.com/v0/b/unithink-89630.appspot.com/o/certification%20images%2Fdesign%20thinkingsetting%20icon.png?alt=media&token=5cbe0884-4382-4079-9a5a-ec42b94fdd13",
+    "description": "Innovate and solve complex problems with design thinking methodologies.",
+    "price": "₹5000",
+    "category": "Professional Certification"
+  },
+  {
+    "skillId": "course007",
+    "courseName": "Interview / GD Mock Training",
+    "imageLink": "https://firebasestorage.googleapis.com/v0/b/unithink-89630.appspot.com/o/certification%20images%2Finterview%20training%20icon.png?alt=media&token=7f28135a-fe86-4e94-8a8a-ba0970e3d183",
+    "description": "Ace your interviews and group discussions with practical mock sessions.",
+    "price": "₹5000",
+    "category": "Become Corporate Ready"
+  },
+  {
+    "skillId": "course008",
+    "courseName": "Resume Building",
+    "imageLink": "https://firebasestorage.googleapis.com/v0/b/unithink-89630.appspot.com/o/certification%20images%2Fresume%20training%20icon.png?alt=media&token=360d3b3f-b85a-4f2c-90f6-8aa21f126f61",
+    "description": "Create a standout resume that captures attention and lands interviews.",
+    "price": "₹5000",
+    "category": "Become Corporate Ready"
+  },
+  {
+    "skillId": "course009",
+    "courseName": "Campus to Corporate",
+    "imageLink": "https://firebasestorage.googleapis.com/v0/b/unithink-89630.appspot.com/o/certification%20images%2Fcampus%20to%20corporatetraining%20icon.png?alt=media&token=af678e88-c081-478b-8ab9-32d473efe5ce",
+    "description": "Transition smoothly from campus life to a successful corporate career.",
+    "price": "₹5000",
+    "category": "Become Corporate Ready"
+  },
+  {
+    "skillId": "course011",
+    "courseName": "Public Speaking Method",
+    "imageLink": "https://firebasestorage.googleapis.com/v0/b/unithink-89630.appspot.com/o/certification%20images%2Fpublic%20speaking%20icon.png?alt=media&token=56ca6efe-8e03-43dc-a12a-a2851c69e8d5",
+    "description": "Master the art of effective communication and speak confidently in any setting.",
+    "price": "₹5000",
+    "category": "Students"
+  },
+  {
+    "skillId": "course012",
+    "courseName": "Critical Thinking by Case Study Method",
+    "imageLink": "https://firebasestorage.googleapis.com/v0/b/unithink-89630.appspot.com/o/certification%20images%2Fcritical%20thining%20icon.png?alt=media&token=7562bf20-fcf9-44ad-8edc-a574d35ea928",
+    "description": "Develop critical thinking and decision-making skills through real-world case studies.",
+    "price": "₹5000",
+    "category": "Students"
+  }
+]

@@ -90,7 +90,7 @@ const Services = () => {
               <img src={service} alt="Description of the image" />
             </div>
 
-            <div className="mt-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
+            {/* <div className="mt-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
               {services.map((service, index) => (
                 <div
                   key={index}
@@ -113,7 +113,7 @@ const Services = () => {
                   </div>
                 </div>
               ))}
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

@@ -9,6 +9,7 @@ import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import Services from '../components/Services'
 import PopularCourses from '../components/PopularCourses'
+import Awards from '../components/Awards'
 function Home() {
 
   return (
@@ -17,6 +18,8 @@ function Home() {
         <BookNow/>
         {/* <Intro/> */}
         <Services/>
+        <Awards/>
+
 
         {/* <Categories/> */}
         <AboutUs/>

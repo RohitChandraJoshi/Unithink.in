@@ -4,7 +4,7 @@ import aboutusperson from "../assets/aboutusperson1.png";
 import { BsCheck2All } from "react-icons/bs";
 import aboutshape from "../assets/about-shape-2.svg";
 import Quiz from "./Quiz";
-
+import bruceleeimage from '../assets/brucelee.jpg'
 function AboutUs() {
   return (
     <div>
@@ -25,23 +25,7 @@ function AboutUs() {
                   </span>{" "}
                   practiced one kick 10,000 times." - Bruce Lee
                 </h5>
-                <p className="font-normal text-gray-500 dark:text-gray-400 pb-4">
-                  Our Expertise -
-                </p>
-                <div className="">
-                  <p className="flex gap-2">
-                    <BsCheck2All /> Education & Career Counselling
-                  </p>
-                  <p className="flex gap-2">
-                    <BsCheck2All /> Find Your University & Course
-                  </p>
-                  <p className="flex gap-2">
-                    <BsCheck2All /> Skilling Academy
-                  </p>
-                  <p className="flex gap-2">
-                    <BsCheck2All /> Education & Business Counsultancy
-                  </p>
-                </div>
+                <img className="w-32 h-32" src={bruceleeimage} alt="bruceleeimage" />
               </div>
             </div>
           </div>

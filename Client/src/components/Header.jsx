@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Button, Navbar } from "flowbite-react";
+import { Button, Navbar, Dropdown } from "flowbite-react";
 import { Link } from "react-router-dom";
 import logo from "../assets/logo.jpg";
 import { Footer } from "flowbite-react";
@@ -102,8 +102,30 @@ function Header() {
         <Navbar.Link>
           <Link to="/countries">Countries</Link>
         </Navbar.Link>
+
+        {/* Dropdown for Courses */}
+        <Dropdown label="Courses" inline>
+  <Dropdown.Item>
+    <Link 
+      to="/skilling" 
+      className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900 transition duration-300 ease-in-out rounded-md"
+    >
+      Skilling Courses
+    </Link>
+  </Dropdown.Item>
+  <Dropdown.Item>
+    <Link 
+      to="/courses" 
+      className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900 transition duration-300 ease-in-out rounded-md"
+    >
+      UG & PG Courses
+    </Link>
+  </Dropdown.Item>
+</Dropdown>
+
+
         <Navbar.Link>
-          <Link to="/courses">Courses</Link>
+          <Link to="/blogs">Blogs</Link>
         </Navbar.Link>
         <Navbar.Link>
           <Link to="/faqs">FAQs</Link>

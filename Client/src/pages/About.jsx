@@ -99,7 +99,7 @@ function About() {
       {/* top section */}
       <div className="mt-10">
         <Link
-          to="https://wa.me/message/H6GTSW5G5WWTK1"
+          to="https://wa.me/message/GIWSQYCHN67RD1 "
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -141,151 +141,144 @@ function About() {
         </div>
       </div>
 
-      {/* main content page */}
-      <div className="w-full mx-auto mt-10">
-        {/* heading */}
-        <div className="w-1/2 border-b border-black mx-auto">
-          <h1 className="uppercase lg:text-6xl md:text-4xl text-2xl text-center lg:p-4 p-2">
-            Who We Are
-          </h1>
-        </div>
-        <div className="w-11/12 mx-auto mt-5">
-          <div className="flex flex-col md:flex-row items-center bg-white shadow-lg rounded-lg overflow-hidden">
-            <div className="md:w-1/3">
-              <img
-                src={who}
-                alt="Unithink Education International"
-                className="w-full h-full object-cover"
-              />
-            </div>
-            <div className="md:w-2/3 p-6">
-              <p className="lg:text-2xl md:text-2xl text-xl text-center md:text-center text-neutral-800 font-medium leading-relaxed text-justify">
-                Unithink Education International Pvt. Ltd. acts as your global
-                education and career mentor, providing expert guidance in
-                university selection, admissions, and support services on a
-                worldwide scale. With over 22 years of experience in
-                international education, we specialize in counseling, university
-                pairing, application aid, visa support, scholarship assistance,
-                and immigration guidance. Our vast database comprises 350+
-                universities, and we extend our services to students across
-                continents, covering countries such as the US, Canada, UK,
-                Australia, France, Germany, Netherlands, UAE, Japan, and India.
-              </p>
-            </div>
+      {/* Main content page */}
+      <div className="w-full mx-auto mt-10 space-y-20">
+        {/* Who We Are Section */}
+        <div className="w-full mx-auto flex flex-col md:flex-row items-center">
+          {/* Text Section */}
+          <div className="md:w-1/2 bg-gray-100 p-10">
+            <h2 className="text-xl font-semibold uppercase text-gray-700 mb-4">
+              Who We Are
+            </h2>
+            <h1 className="lg:text-5xl md:text-4xl text-3xl font-bold text-gray-800 leading-snug">
+              Unithink Education International Pvt. Ltd.
+            </h1>
+            <p className="mt-6 lg:text-2xl md:text-xl text-lg text-gray-700 leading-relaxed">
+              Unithink Education International Pvt. Ltd. is your global mentor
+              for education and career guidance. With over 22 years of
+              experience, we specialize in university selection, admissions,
+              visa support, scholarships, and immigration guidance. We partner
+              with 350+ universities worldwide, serving students across the US,
+              Canada, UK, Australia, and more.
+            </p>
+          </div>
+          {/* Image Section */}
+          <div className="md:w-1/2">
+            <img
+              src={who}
+              alt="Unithink Education International"
+              className="w-full h-full object-cover"
+            />
           </div>
         </div>
-      </div>
 
-      {/* Vision */}
-      <div className="w-full mx-auto mt-10">
-        {/* heading */}
-        <div className="w-1/2 border-b border-black mx-auto">
-          <h1 className="uppercase lg:text-6xl md:text-4xl text-2xl text-center lg:p-4 p-2">
-            Vision
-          </h1>
-        </div>
-        <div className="w-11/12 mx-auto mt-5">
-          <div className="flex flex-col md:flex-row items-center bg-white shadow-lg rounded-lg overflow-hidden">
-            <div className="md:w-1/3">
-              <img
-                src={vision}
-                alt="Unithink Education International"
-                className="w-full h-full object-cover"
-              />
-            </div>
-            <div className="md:w-2/3 p-6">
-              <p className="lg:text-2xl md:text-2xl text-xl text-center md:text-center text-neutral-800 font-medium leading-relaxed text-justify">
-                Unithink Education International's vision is to serve as your
-                lifelong global education companion and career mentor, guiding
-                you through every stage of your educational journey and
-                professional development.
-              </p>
-            </div>
+        {/* Vision Section */}
+        <div className="w-full mx-auto flex flex-col md:flex-row items-center">
+          {/* Image Section */}
+          <div className="md:w-1/2">
+            <img
+              src={vision}
+              alt="Vision"
+              className="w-full h-full object-cover"
+            />
+          </div>
+          {/* Text Section */}
+          <div className="md:w-1/2 bg-gray-100 p-10">
+            <h2 className="text-xl font-semibold uppercase text-gray-700 mb-4">
+              Vision
+            </h2>
+            <h1 className="lg:text-5xl md:text-4xl text-3xl font-bold text-gray-800 leading-snug">
+              Our Vision for the Future
+            </h1>
+            <p className="mt-6 lg:text-2xl md:text-xl text-lg text-gray-700 leading-relaxed">
+              Unithink Education International's vision is to serve as your
+              lifelong global education companion and career mentor, guiding you
+              through every stage of your educational journey and professional
+              development.
+            </p>
           </div>
         </div>
-      </div>
 
-      {/* Mission */}
-      <div className="w-full mx-auto mt-10">
-        {/* heading */}
-        <div className="w-1/2 border-b border-black mx-auto">
-          <h1 className="uppercase lg:text-6xl md:text-4xl text-2xl text-center lg:p-4 p-2">
-            Mission
-          </h1>
-        </div>
-        <div className="w-11/12 mx-auto mt-5">
-          <div className="flex flex-col md:flex-row items-center bg-white shadow-lg rounded-lg overflow-hidden">
-            <div className="md:w-1/3">
-              <img
-                src={mission}
-                alt="Unithink Education International"
-                className="w-full h-full object-cover"
-              />
-            </div>
-            <div className="md:w-2/3 p-6">
-              <p className="lg:text-2xl md:text-2xl text-xl text-center md:text-center text-neutral-800 font-medium leading-relaxed text-justify">
-                Unithink Education International is dedicated to empowering
-                students globally through a range of educational support
-                services. Our mission is to facilitate university selection,
-                offer admissions assistance, and provide career guidance,
-                enabling students to navigate the complexities of the education
-                landscape confidently. We aim to equip students with the tools
-                and resources they need to achieve their academic and
-                professional aspirations, wherever they may be in the world.
-              </p>
-            </div>
+        {/* Mission Section */}
+        <div className="w-full mx-auto flex flex-col md:flex-row items-center">
+          {/* Text Section */}
+          <div className="md:w-1/2 bg-gray-100 p-10">
+            <h2 className="text-xl font-semibold uppercase text-gray-700 mb-4">
+              Mission
+            </h2>
+            <h1 className="lg:text-5xl md:text-4xl text-3xl font-bold text-gray-800 leading-snug">
+              Our Mission Statement
+            </h1>
+            <p className="mt-6 lg:text-2xl md:text-xl text-lg text-gray-700 leading-relaxed">
+              Unithink Education International is dedicated to empowering
+              students globally through a range of educational support services.
+              Our mission is to facilitate university selection, offer
+              admissions assistance, and provide career guidance, enabling
+              students to navigate the complexities of the education landscape
+              confidently. We aim to equip students with the tools and resources
+              they need to achieve their academic and professional aspirations,
+              wherever they may be in the world.
+            </p>
+          </div>
+          {/* Image Section */}
+          <div className="md:w-1/2">
+            <img
+              src={mission}
+              alt="Mission"
+              className="w-full h-full object-cover"
+            />
           </div>
         </div>
-      </div>
-      <div className="w-full mx-auto mt-10">
-        {/* heading */}
-        <div className="w-1/2 border-b border-black mx-auto">
-          <h1 className="uppercase lg:text-6xl md:text-4xl text-2xl text-center lg:p-4 p-2">
-            UEI ENVISIONS
-          </h1>
-        </div>
-        <div className="w-11/12 mx-auto mt-5">
-          <div className="flex flex-col md:flex-row items-center bg-white shadow-lg rounded-lg overflow-hidden">
-            <div className="md:w-1/3">
-              <img
-                src={UEI}
-                alt="Unithink Education International"
-                className="w-full h-full object-cover"
-              />
-            </div>
-            <div className="md:w-2/3 p-6">
-              <ul className="w-full list-disc p-2">
-                <li className="lg:text-2xl lg:text-lg text-sm text-neutral-700 font-medium">
-                  <span className="font-bold">Global Leadership:</span> Being a
-                  global leader in empowering individuals for unparalleled
-                  career growth.
-                </li>
-                <li className="lg:text-2xl lg:text-lg text-sm text-neutral-700 font-medium">
-                  <span className="font-bold">Seamless Integration:</span>{" "}
-                  Seamlessly integrating tailored education choices with unique
-                  cultural identities and personal aspirations.
-                </li>
-                <li className="lg:text-2xl lg:text-lg text-sm text-neutral-700 font-medium">
-                  <span className="font-bold">
-                    Executive Development Catalyst:
-                  </span>{" "}
-                  Catalyzing professionals at all levels for personal growth and
-                  organizational success.
-                </li>
-                <li className="lg:text-2xl lg:text-lg text-sm text-neutral-700 font-medium">
-                  <span className="font-bold">
-                    Innovation and Transformation:
-                  </span>{" "}
-                  Leading continuous innovation and positive transformations in
-                  education and business.
-                </li>
-                <li className="lg:text-2xl lg:text-lg text-sm text-neutral-700 font-medium">
-                  <span className="font-bold">Collaborative Excellence:</span>{" "}
-                  Creating a world where education and business collaborate
-                  seamlessly, contributing to global excellence.
-                </li>
-              </ul>
-            </div>
+
+        {/* UEI Envisions Section */}
+        <div className="w-full mx-auto flex flex-col md:flex-row items-center">
+          {/* Image Section */}
+          <div className="md:w-1/2">
+            <img
+              src={UEI}
+              alt="UEI Envisions"
+              className="w-full h-full object-cover"
+            />
+          </div>
+          {/* Text Section */}
+          <div className="md:w-1/2 bg-gray-100 p-10">
+            <h2 className="text-xl font-semibold uppercase text-gray-700 mb-4">
+              UEI Envisions
+            </h2>
+            <h1 className="lg:text-5xl md:text-4xl text-3xl font-bold text-gray-800 leading-snug">
+              Our Envisioned Future
+            </h1>
+            <ul className="mt-6 space-y-4 text-gray-700">
+              <li className="mt-6 lg:text-2xl md:text-xl text-lg text-gray-700 leading-relaxed">
+                <span className="font-bold">Global Leadership:</span> Being a
+                global leader in empowering individuals for unparalleled career
+                growth.
+              </li>
+              <li className="mt-6 lg:text-2xl md:text-xl text-lg text-gray-700 leading-relaxed">
+                <span className="font-bold">Seamless Integration:</span>{" "}
+                Integrating tailored education choices with unique cultural
+                identities and personal aspirations.
+              </li>
+              <li className="mt-6 lg:text-2xl md:text-xl text-lg text-gray-700 leading-relaxed">
+                <span className="font-bold">
+                  Executive Development Catalyst:
+                </span>{" "}
+                Catalyzing professionals at all levels for personal growth and
+                organizational success.
+              </li>
+              <li className="mt-6 lg:text-2xl md:text-xl text-lg text-gray-700 leading-relaxed">
+                <span className="font-bold">
+                  Innovation and Transformation:
+                </span>{" "}
+                Leading continuous innovation and positive transformations in
+                education and business.
+              </li>
+              <li className="mt-6 lg:text-2xl md:text-xl text-lg text-gray-700 leading-relaxed">
+                <span className="font-bold">Collaborative Excellence:</span>{" "}
+                Creating a world where education and business collaborate
+                seamlessly, contributing to global excellence.
+              </li>
+            </ul>
           </div>
         </div>
       </div>

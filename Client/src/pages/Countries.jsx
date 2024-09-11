@@ -29,7 +29,7 @@ function Countries() {
     <div className="px-8 bg-white">
       <div className="mt-10">
         <Link
-          to="https://wa.me/message/H6GTSW5G5WWTK1"
+          to="https://wa.me/message/GIWSQYCHN67RD1 "
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -46,7 +46,7 @@ function Countries() {
       ) : (
         <>
           <div className="text-center mt-10">
-            <h1 className="mb-4 font-bold text-3xl md:text-3xl lg:text-4xl text-black">
+            <h1 className="mb-4 font-bold text-3xl md:text-3xl lg:text-3xl text-black">
               LIST OF COUNTRIES
             </h1>
             <div className="h-1 bg-orange-500 w-20 mx-auto mb-5"></div>

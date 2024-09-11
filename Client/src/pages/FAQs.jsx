@@ -33,7 +33,7 @@ function FAQs() {
     <div className="bg-white">
       <div className="mt-10">
         <Link
-          to="https://wa.me/message/H6GTSW5G5WWTK1"
+          to="https://wa.me/message/GIWSQYCHN67RD1 "
           target="_blank"
           rel="noopener noreferrer"
         >

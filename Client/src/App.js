@@ -26,6 +26,11 @@ import Blog1 from './pages/Blog1'
 import Blog2 from './pages/Blog2'
 import Blog3 from './pages/Blog3'
 import PopularCourses from './components/PopularCourses'
+import RegisterForm from './pages/Registration'
+import Blogs from './pages/Blogs'
+import BlogDetails from './pages/BlogDetails'
+import SkillingDetails from './pages/SkillingDetails'
+
 function App() {
   return (
     <BrowserRouter>
@@ -53,8 +58,10 @@ function App() {
         <Route path='/blog1' element={<Blog1/>}/>
         <Route path='/blog2' element={<Blog2/>}/>
         <Route path='/blog3' element={<Blog3/>}/>
-        
-        
+        <Route path='/registration' element={<RegisterForm/>}/>
+        <Route path="/blogs" element={<Blogs />} />
+        <Route path="/blog/:id" element={<BlogDetails />} />
+        <Route path="/skillingdetails/:skillId" element={<SkillingDetails />} />
        
       
       </Routes>

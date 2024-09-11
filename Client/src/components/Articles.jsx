@@ -100,7 +100,7 @@ function Articles() {
               </Card>
             </div>
           </div>
-          <Link to="/faqs">
+          <Link to="/blogs">
             <Button
               outline
               size="lg"
@@ -110,7 +110,7 @@ function Articles() {
               className="mx-auto justify-items-center mt-12 hover:scale-105"
               style={{ zIndex: 1, marginBottom: "60px" }}
             >
-              Browse FAQs <HiArrowCircleRight size={25} />
+              Browse More Blogs <HiArrowCircleRight size={25} />
             </Button>
           </Link>
         </div>

@@ -29,7 +29,7 @@ function FooterCom() {
               <Footer.Link href="https://twitter.com/sheelanmisra">
                 Twitter
               </Footer.Link>
-              <Footer.Link href="https://wa.me/message/H6GTSW5G5WWTK1 ">
+              <Footer.Link href="https://wa.me/message/GIWSQYCHN67RD1  ">
                 whatsapp
               </Footer.Link>
               <Footer.Link href="https://www.facebook.com/profile.php?id=61560487778564">

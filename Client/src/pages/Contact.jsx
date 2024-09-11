@@ -84,7 +84,7 @@ function Contact() {
     <div className="flex flex-col md:flex-row relative">
       <div className="mt-10">
         <a
-          href="https://wa.me/message/H6GTSW5G5WWTK1"
+          href="https://wa.me/message/GIWSQYCHN67RD1 "
           target="_blank"
           rel="noopener noreferrer"
         >

@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import { useParams, Link } from "react-router-dom";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faWhatsapp } from "@fortawesome/free-brands-svg-icons";
 function CountryDetails() {
   const { countryid } = useParams();
   const [countryDetails, setCountryDetails] = useState(null);
@@ -42,6 +44,18 @@ function CountryDetails() {
 
   return (
     <div className="container mx-auto px-4 py-8">
+            <div className="mt-10">
+        <Link
+          to="https://wa.me/message/GIWSQYCHN67RD1 "
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <button className="fixed bottom-4 right-4 z-50 bg-green-500 text-white py-3 px-6 hover:bg-green-600 flex items-center rounded-lg shadow-lg">
+            <FontAwesomeIcon icon={faWhatsapp} className="mr-2" />
+            Chat with Us!
+          </button>
+        </Link>
+      </div>
       {countryDetails && (
         <div>
           <h1 className="text-3xl font-bold mb-4">{countryDetails.c_name}</h1>

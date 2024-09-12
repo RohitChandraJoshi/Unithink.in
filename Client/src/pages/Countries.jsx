@@ -77,10 +77,10 @@ function Countries() {
                       <p className="text-sm text-gray-600 mt-2">
                         {country.c_about}
                       </p>
-                      <p className="text-sm text-gray-600 mt-2">
+                      {/* <p className="text-sm text-gray-600 mt-2">
                         <span className="font-bold">World Rank:</span>{" "}
                         {country.c_worldrank}
-                      </p>
+                      </p> */}
                     </div>
                   </Link>
                 ))}

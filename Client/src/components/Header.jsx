@@ -105,38 +105,12 @@ function Header() {
         <Navbar.Link>
           <Link to="/countries">Countries</Link>
         </Navbar.Link>
-
-        {/* Dropdown for Courses */}
-        <div className="block md:hidden">
-          <Navbar.Link>
-            <Link to="/skilling">Skilling Courses</Link>
-          </Navbar.Link>
-          <Navbar.Link>
-            <Link to="/courses">UG & PG Courses</Link>
-          </Navbar.Link>
-        </div>
-
-        <div className="hidden md:block">
-          <Dropdown label="Courses" inline>
-            <Dropdown.Item>
-              <Link 
-                to="/skilling" 
-                className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900 transition duration-300 ease-in-out rounded-md"
-              >
-                Skilling Courses
-              </Link>
-            </Dropdown.Item>
-            <Dropdown.Item>
-              <Link 
-                to="/courses" 
-                className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900 transition duration-300 ease-in-out rounded-md"
-              >
-                UG & PG Courses
-              </Link>
-            </Dropdown.Item>
-          </Dropdown>
-        </div>
-
+        <Navbar.Link>
+          <Link to="/courses">Courses</Link>
+        </Navbar.Link>
+        <Navbar.Link>
+          <Link to="/skilling">Skilling Academy</Link>
+        </Navbar.Link>
         <Navbar.Link>
           <Link to="/blogs">Blogs</Link>
         </Navbar.Link>

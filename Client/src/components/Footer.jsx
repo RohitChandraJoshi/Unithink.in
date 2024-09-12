@@ -21,6 +21,7 @@ function FooterCom() {
               <Footer.Link href="booking">Book Now</Footer.Link>
               <Footer.Link href="countries">Countries</Footer.Link>
               <Footer.Link href="courses">Courses</Footer.Link>
+              <Footer.Link href="skilling">Skilling Academy</Footer.Link>
             </Footer.LinkGroup>
           </div>
           <div>

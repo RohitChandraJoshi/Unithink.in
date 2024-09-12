@@ -18,13 +18,14 @@ function Home() {
         <BookNow/>
         {/* <Intro/> */}
         <Services/>
-        <Awards/>
 
 
         {/* <Categories/> */}
         <AboutUs/>
         <PopularCountriesImages/>
         <PopularCourses/>
+        <Awards/>
+
         <Articles/>
     </div>
   )

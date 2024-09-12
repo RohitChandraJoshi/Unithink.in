@@ -92,7 +92,7 @@ function Skilling() {
               onClick={() => setSelectedCategory("Professional Certification")}
               className={`px-3 py-2 rounded-lg text-sm md:text-base ${selectedCategory === "Professional Certification" ? "bg-orange-500 text-white" : "bg-gray-200 text-black"}`}
             >
-              Professional Certification
+              Professionals 
             </button>
             <button
               onClick={() => setSelectedCategory("Become Corporate Ready")}

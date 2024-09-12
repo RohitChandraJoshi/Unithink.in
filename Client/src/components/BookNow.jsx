@@ -29,7 +29,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faWhatsapp } from "@fortawesome/free-brands-svg-icons";
 import { sendEmail } from "../pages/EmailService";
 import ImageModal from "./ImageModel";
-import popupImage from "../assets/popup.png";
+import popupImage from "../assets/popup.jpg";
 function BookNow() {
   const scrollToTop = () => {
     window.scrollTo({
@@ -63,9 +63,9 @@ function BookNow() {
       setStatistics((prevStats) => ({
         ...prevStats,
         universitiesTied:
-          prevStats.universitiesTied < 350
-            ? prevStats.universitiesTied + 5
-            : 350,
+          prevStats.universitiesTied < 815
+            ? prevStats.universitiesTied + 10
+            : 815,
         coursesAvailable:
           prevStats.coursesAvailable < 25 ? prevStats.coursesAvailable + 1 : 25,
         satisfactionRate:

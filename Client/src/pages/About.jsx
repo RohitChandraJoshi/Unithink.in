@@ -112,7 +112,7 @@ function About() {
       <div className="relative max-w-full">
         <div
           style={{ backgroundImage: `url(${boardmeet})`, filter: "blur(8px)" }}
-          className="p-20 md:p-80 md:pr-52 bg-cover bg-center bg-no-repeat flex justify-center items-center pb-16 lg:mt-0 md:mt-20 mt-28 relative"
+          className="p-20 md:p-40 md:pr-52 bg-cover bg-center bg-no-repeat flex justify-center items-center pb-16 lg:mt-0 md:mt-20 mt-28 relative"
         >
           <div className="absolute inset-0"></div>
         </div>
@@ -184,9 +184,6 @@ function About() {
           </div>
           {/* Text Section */}
           <div className="md:w-1/2 bg-gray-100 p-10">
-            <h2 className="text-xl font-semibold uppercase text-gray-700 mb-4">
-              Vision
-            </h2>
             <h1 className="lg:text-5xl md:text-4xl text-3xl font-bold text-gray-800 leading-snug">
               Our Vision for the Future
             </h1>
@@ -203,9 +200,6 @@ function About() {
         <div className="w-full mx-auto flex flex-col md:flex-row items-center">
           {/* Text Section */}
           <div className="md:w-1/2 bg-gray-100 p-10">
-            <h2 className="text-xl font-semibold uppercase text-gray-700 mb-4">
-              Mission
-            </h2>
             <h1 className="lg:text-5xl md:text-4xl text-3xl font-bold text-gray-800 leading-snug">
               Our Mission Statement
             </h1>
@@ -242,9 +236,6 @@ function About() {
           </div>
           {/* Text Section */}
           <div className="md:w-1/2 bg-gray-100 p-10">
-            <h2 className="text-xl font-semibold uppercase text-gray-700 mb-4">
-              UEI Envisions
-            </h2>
             <h1 className="lg:text-5xl md:text-4xl text-3xl font-bold text-gray-800 leading-snug">
               Our Envisioned Future
             </h1>

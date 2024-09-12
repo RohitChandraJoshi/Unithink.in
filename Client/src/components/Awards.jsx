@@ -1,11 +1,12 @@
 import React from 'react';
+import { FaTrophy } from 'react-icons/fa'; // Import FontAwesome trophy icon
 
 const awards = [
   {
     title: 'Global Women in Business & Leadership Awards',
     year: 2023,
     description: 'by GCPIT',
-    imgSrc: 'https://firebasestorage.googleapis.com/v0/b/unithink-89630.appspot.com/o/awards%20icons%2Faima.png?alt=media&token=eee1eef8-d7d4-4710-b37a-e7c398bad310', // Replace with actual image URL
+    imgSrc: 'https://firebasestorage.googleapis.com/v0/b/unithink-89630.appspot.com/o/awards%20icons%2Faima.png?alt=media&token=eee1eef8-d7d4-4710-b37a-e7c398bad310',
   },
   {
     title: 'Outstanding Management and Entrepreneurship Education Institute',
@@ -49,21 +50,27 @@ const AwardsPage = () => {
   return (
     <div className="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
       <div className="text-3xl">
-              <h1 className="uppercase text-center font-bold tracking-widest text-gray-800 text-left mb-8">
-                Awards and Accolades
-              </h1>
-            </div>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <h1 className="uppercase text-center font-bold tracking-widest text-gray-800 text-left mb-8">
+          Awards and Accolades
+        </h1>
+      </div>
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
         {awards.map((award, index) => (
-          <div key={index} className="bg-white shadow-lg rounded-lg p-6 text-center">
+          <div
+            key={index}
+            className="bg-white shadow-lg rounded-lg p-4 text-center border-2 border-yellow-400"
+          >
+            <FaTrophy className="text-yellow-400 text-2xl mx-auto mb-3" />
             <img
               src={award.imgSrc}
               alt={award.title}
-              className="mx-auto w-24 h-auto mb-4 rounded-full"
+              className="mx-auto w-16 h-16 mb-3 rounded-full"
             />
-            <h3 className="text-xl font-semibold text-gray-800 mb-2">{award.title}</h3>
-            <p className="text-gray-600">{award.description}</p>
-            <p className="text-gray-600 mt-2">Year: {award.year}</p>
+            <h3 className="text-lg font-semibold text-gray-800 mb-1">
+              {award.title}
+            </h3>
+            <p className="text-gray-600 text-sm">{award.description}</p>
+            <p className="text-gray-600 text-sm mt-2">Year: {award.year}</p>
           </div>
         ))}
       </div>

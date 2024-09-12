@@ -33,28 +33,12 @@
     "category": "Professional Certification"
   },
   {
-    "skillId": "course031",
-    "courseName": "Advance Excel with AI",
-    "imageLink": "https://firebasestorage.googleapis.com/v0/b/unithink-89630.appspot.com/o/certification%20images%2FAdvance%20Excel%20with%20AI%20iconprogram.png?alt=media&token=acfb295d-5120-421e-829c-0d0d3c191582",
-    "description": "Leverage advanced Excel techniques with AI for data-driven decisions.",
-    "price": "₹5000",
-    "category": "Students"
-  },
-  {
     "skillId": "course004",
     "courseName": "Introduction to AI",
     "imageLink": "https://firebasestorage.googleapis.com/v0/b/unithink-89630.appspot.com/o/certification%20images%2Fintro%20to%20ai%20icon.png?alt=media&token=498b7fee-a6fb-4ad7-a8c7-5887c493d33c",
     "description": "Discover the fundamentals of Artificial Intelligence and its applications.",
     "price": "₹5000",
     "category": "Become Corporate Ready"
-  },
-  {
-    "skillId": "course041",
-    "courseName": "Introduction to AI",
-    "imageLink": "https://firebasestorage.googleapis.com/v0/b/unithink-89630.appspot.com/o/certification%20images%2Fintro%20to%20ai%20icon.png?alt=media&token=498b7fee-a6fb-4ad7-a8c7-5887c493d33c",
-    "description": "Discover the fundamentals of Artificial Intelligence and its applications.",
-    "price": "₹5000",
-    "category": "Students"
   },
   {
     "skillId": "course005",
@@ -65,28 +49,12 @@
     "category": "Students"
   },
   {
-    "skillId": "course051",
-    "courseName": "Goal Setting",
-    "imageLink": "https://firebasestorage.googleapis.com/v0/b/unithink-89630.appspot.com/o/certification%20images%2Fgoal%20setting%20icon.png?alt=media&token=90c86e38-0cc1-4406-8bc4-a49d0a231e0b",
-    "description": "Learn effective strategies to set and achieve your personal and professional goals.",
-    "price": "₹5000",
-    "category": "Professional Certification"
-  },
-  {
     "skillId": "course006",
     "courseName": "Design Thinking",
     "imageLink": "https://firebasestorage.googleapis.com/v0/b/unithink-89630.appspot.com/o/certification%20images%2Fdesign%20thinkingsetting%20icon.png?alt=media&token=5cbe0884-4382-4079-9a5a-ec42b94fdd13",
     "description": "Innovate and solve complex problems with design thinking methodologies.",
     "price": "₹5000",
     "category": "Students"
-  },
-  {
-    "skillId": "course061",
-    "courseName": "Design Thinking",
-    "imageLink": "https://firebasestorage.googleapis.com/v0/b/unithink-89630.appspot.com/o/certification%20images%2Fdesign%20thinkingsetting%20icon.png?alt=media&token=5cbe0884-4382-4079-9a5a-ec42b94fdd13",
-    "description": "Innovate and solve complex problems with design thinking methodologies.",
-    "price": "₹5000",
-    "category": "Professional Certification"
   },
   {
     "skillId": "course007",

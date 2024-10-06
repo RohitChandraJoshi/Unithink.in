@@ -97,7 +97,7 @@ const University = () => {
         ...prevStats,
         universitiesTied:
           prevStats.universitiesTied < 815
-            ? prevStats.universitiesTied + 5
+            ? prevStats.universitiesTied + 10
             : 815,
         coursesAvailable:
           prevStats.coursesAvailable < 25 ? prevStats.coursesAvailable + 1 : 25,

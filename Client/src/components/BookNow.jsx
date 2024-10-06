@@ -24,6 +24,7 @@ import unithink from "../assets/UniThink.png";
 import boundless from "../assets/Boundless.png";
 import rethink from "../assets/ReThink.png";
 import student from "../assets/student.png";
+import student1 from "../assets/student1.png";
 import { HiArrowCircleRight } from "react-icons/hi";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faWhatsapp } from "@fortawesome/free-brands-svg-icons";
@@ -59,7 +60,6 @@ function BookNow() {
 
   useEffect(() => {
     const interval = setInterval(() => {
-      // Update statistics with increasing count
       setStatistics((prevStats) => ({
         ...prevStats,
         universitiesTied:
@@ -77,22 +77,21 @@ function BookNow() {
       }));
     }, 10);
 
-    // Clear interval when component unmounts
     return () => clearInterval(interval);
   }, []);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    console.log("Form data:", formData); // Check if formData is correctly populated
+    console.log("Form data:", formData);
     try {
       setLoading(true);
       const response = await axios.post(
         "https://unithink-backend.vercel.app/api/consultation/",
         formData
       );
-      console.log("Response from backend:", response.data); // Log response for debugging
+      console.log("Response from backend:", response.data);
 
-      await sendEmail(formData); // Send email using emailjs
+      await sendEmail(formData);
 
       setLoading(false);
       setSuccessMessage("Form submitted successfully!");
@@ -109,7 +108,7 @@ function BookNow() {
       });
       setErrorMessage(null);
     } catch (error) {
-      console.error("Error sending data:", error); // Log error for debugging
+      console.error("Error sending data:", error);
       setLoading(false);
       setErrorMessage("Failed to submit form. Please try again later.");
       toast.error("Failed to submit form. Please try again later.");
@@ -123,23 +122,31 @@ function BookNow() {
   };
 
   return (
-    <div className="bg-[#F0F4F6]">
+    <div
+      style={{
+        backgroundColor: "#CFD9DF",
+        backgroundImage: "linear-gradient(62deg, #CFD9DF 0%, #E2EBF0 100%)",
+
+        padding: "20px",
+      }}
+      className=""
+    >
       <div className="relative">
         <img
-          src={student}
+          src={student1}
           alt="UniThink and Boundless Learning"
-          className="absolute top-0 left-0 md:left-1/2 transform -translate-x-1/2 max-w-xs md:max-w-full hidden md:block"
+          className="absolute top-0 left-0 md:left-1/2 transform -translate-x-1/2 max-w-xs md:max-w-full hidden lg:block"
         />
       </div>
 
       <div className="mx-auto max-w-[1600px]">
-        <div
+        {/* <div
           className="absolute inset-0 bg-cover bg-center z-[-1]"
           style={{ backgroundImage: `url(${heroimage})` }}
-        ></div>
+        ></div> */}
         <div className="mx-auto lg:flex">
           <div className="lg:w-3/3 w-full flex flex-col justify-top lg:mx-0 md:mx-4 px-4 pb-3">
-            <div className="mx-auto">
+            <div className="">
               <div className="mt-5">
                 <div className="study ">
                   <img
@@ -207,24 +214,25 @@ function BookNow() {
                 </Link>
                 <div className="bg-[#F0F4F6]">
                   <ImageModal imageSrc={popupImage} />
-                  {/* Your content */}
                 </div>
               </div>
-              <div className="container mx-auto flex justify-center">
-                <div className="z -10 grid grid-cols-1 gap-10 lg:px-2 md:grid-cols-2 lg:grid-cols-3 text-center">
-                  <div className="border rounded-lg p-6 bg-gradient-to-r from-red-200 to-red-100 shadow-md w-50 h-30 flex flex-col justify-center items-center">
+              <div className="h-auto flex justify-center mb-10">
+                <div className="grid grid-cols-1 gap-6 md:grid-cols-3 text-center w-full px-4">
+                  <div className="z-10 border rounded-[20px] p-6 bg-gradient-to-r from-red-200 to-red-100 shadow-md w-full max-w-[100%] md:max-w-[250px] h-[150px] flex flex-col justify-center items-center mx-auto mb-4 md:mb-0">
                     <h1 className="font-bold text-3xl text-red-600">
                       {statistics.coursesAvailable}+
                     </h1>
                     <p className="text-gray-700">Years of Career Counselling</p>
                   </div>
-                  <div className="z -10 border rounded-lg p-6 bg-gradient-to-r from-green-200 to-green-100 shadow-md w-50 h-30 flex flex-col justify-center items-center">
+
+                  <div className="z-10 border rounded-[20px] p-6 bg-gradient-to-r from-green-200 to-red-100 shadow-md w-full max-w-[100%] md:max-w-[250px] h-[150px] flex flex-col justify-center items-center mx-auto mb-4 md:mb-0">
                     <h1 className="font-bold text-3xl text-green-600">
                       {statistics.universitiesTied}+
                     </h1>
                     <p className="text-gray-700">Partner Universities</p>
                   </div>
-                  <div className="z-10 border rounded-lg p-6 bg-gradient-to-r from-purple-200 to-purple-100 shadow-md w-50 h-30 flex flex-col justify-center items-center">
+
+                  <div className="z-10 border rounded-[20px] p-6 bg-gradient-to-r from-purple-200 to-red-100 shadow-md w-full max-w-[100%] md:max-w-[250px] h-[150px] flex flex-col justify-center items-center mx-auto">
                     <h1 className="font-bold text-3xl text-purple-600">
                       {statistics.satisfactionRate}+
                     </h1>
@@ -234,33 +242,17 @@ function BookNow() {
                   </div>
                 </div>
               </div>
-
-              <div className="text-lg text-gray-700 space-y-4 mb-8">
-                <div className="flex items-center space-x-2 text-green-500">
-                  <FaCheck />
-                  <span className="font-bold">IELTS/TOEFL Training</span>
-                </div>
-
-                <div className="flex items-center space-x-2 text-green-500">
-                  <FaCheck />
-                  <span className="font-bold">
-                    Admission in National and International Universities
-                  </span>
-                </div>
-              </div>
             </div>
           </div>
           {/* right side form */}
-          <div className=" lg:w-2/3 w-full flex flex-col justify-top mt-8 md:mx-4 px-2">
+          <div className="z-10 lg:w-[800px] w-full flex-col justify-top mt-8 mr-10 md:mx-4 px-2">
             {" "}
-            {/* Changed width to lg:w-2/3 */}
-            <div className="p-5 bg-gray-200 border rounded-2xl shadow-lg shadow-2xl mb-4">
-              <p className="text-lg justify-center text-center md:text-left">
+            <div className="z-10 p-5 bg-gray-200 border rounded-2xl shadow-lg shadow-2xl mb-4">
+              <p className="z-10 text-lg justify-center text-center md:text-left">
                 Book Free Counselling & Guidance
               </p>
               <form onSubmit={handleSubmit} className="flex flex-col gap-3">
                 {" "}
-                {/* Adjusted gap */}
                 <div>
                   <Label value="Name*" />
                   <TextInput
@@ -328,52 +320,6 @@ function BookNow() {
                     </option>
                   </Select>
                 </div>
-                {/* <div>
-                                    <Label value='When do you plan to study*' />
-                                    <Select
-                                        id="studyPlan"
-                                        value={formData.studyPlan}
-                                        onChange={handleChange}
-                                        required
-                                        className="rounded-md shadow-sm border-gray-300 focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50"
-                                    >
-                                        <option value="">Select Plan</option>
-                                        
-                                    </Select>
-                                </div> */}
-                {/* <div>
-                                    <Label value='How would you fund your education?*' />
-                                    <Select
-                                        id="fundSource"
-                                        value={formData.fundSource}
-                                        onChange={handleChange}
-                                        required
-                                        className="rounded-md shadow-sm border-gray-300 focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50"
-                                    >
-                                        <option value="">Select Fund Source</option>
-                                        <option value="Self Funded">Self Funded</option>
-                                        <option value="Parents">Parents</option>
-                                        <option value="Seeking Scholarship">Seeking Scholarship</option>
-                                        <option value="Bank Loan">Bank Loan</option>
-                                    </Select>
-                                </div> */}
-                {/* <div>
-                                    <Label htmlFor="studyLevel" value="Preferred Study Level*" />
-                                    <Select
-                                        id="studyLevel"
-                                        value={formData.studyLevel}
-                                        onChange={handleChange}
-                                        required
-                                        className="rounded-md shadow-sm border-gray-300 focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50"
-                                    >
-                                        <option value="">Select Study Level</option>
-                                        <option value="Post Graduate">Post Graduate</option>
-                                        <option value="Undergraduate">Undergraduate</option>
-                                        <option value="Vocational">Vocational</option>
-                                        <option value="Doctorate">Doctorate</option>
-                                    </Select>
-                                </div> */}
-                {/* Additional Checkboxes */}
                 <label htmlFor="receiveUpdates" className="text-sm">
                   UniThink will not share your details with others without your
                   permission:
@@ -432,7 +378,7 @@ function BookNow() {
           </div>
         </div>
         <div className="flex flex-col items-center justify-center pt-10">
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 max-w-7xl mx-auto">
+          <div className="mb-20 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 max-w-7xl mx-auto">
             <Card
               className="max-w-sm relative hover:scale-105 shadow-xl "
               imgSrc={Counselling}

@@ -21,7 +21,7 @@ function FAQs() {
           "https://unithink-backend.vercel.app/api/faq/"
         );
         setFaqs(response.data);
-        setLoading(false); // Set loading to false after data is fetched
+        setLoading(false);
       } catch (error) {
         console.error("Error fetching FAQs:", error);
       }

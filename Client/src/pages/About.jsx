@@ -94,9 +94,32 @@ function About() {
     });
   };
 
+  const advisors = [
+    {
+      name: "Dr. Ranjith TP",
+      title:
+        "Head of Talent Acquisition-Volvo Group India | Former Director, Talent Acquisition Epsilon | Enabling Growth | Psychometric assessment specialist | Certified Career Mentor",
+      image:
+        "https://firebasestorage.googleapis.com/v0/b/unithink-89630.appspot.com/o/advisory%20photos%2FTP%20ranjith.jpeg?alt=media&token=942b271f-05a7-46b0-8ffc-9ca7e9784437",
+    },
+    {
+      name: "Ravikumar V R",
+      title:
+        "Founder President of Karnataka Management Association | Former Dean at Acharya Institutes",
+      image:
+        "https://firebasestorage.googleapis.com/v0/b/unithink-89630.appspot.com/o/advisory%20photos%2Fravikumar%20v%20r%20.jpg?alt=media&token=3965574c-4929-435f-b89b-a377fbe35252",
+    },
+    {
+      name: "Palash Gupta",
+      title:
+        "Product R&D, Engineering, Strategy | GCC Leader | Member NASSCOM Product Council at DeepTech | President PMI Bangalore | Board Member & Mentor Startup | Former DeepTech Startup Mentor at IIT Kanpur",
+      image:
+        "https://firebasestorage.googleapis.com/v0/b/unithink-89630.appspot.com/o/advisory%20photos%2Fpalash%20gupta.jpeg?alt=media&token=f6c9acd6-52c9-4ff8-8c68-fe635a210cb0",
+    },
+  ];
+
   return (
     <div>
-      {/* top section */}
       <div className="mt-10">
         <Link
           to="https://wa.me/message/GIWSQYCHN67RD1 "
@@ -140,12 +163,8 @@ function About() {
           </Link>
         </div>
       </div>
-
-      {/* Main content page */}
       <div className="w-full mx-auto mt-10 space-y-20">
-        {/* Who We Are Section */}
         <div className="w-full mx-auto flex flex-col md:flex-row items-center">
-          {/* Text Section */}
           <div className="md:w-1/2 bg-gray-100 p-10">
             <h2 className="text-xl font-semibold uppercase text-gray-700 mb-4">
               Who We Are
@@ -162,7 +181,6 @@ function About() {
               Canada, UK, Australia, and more.
             </p>
           </div>
-          {/* Image Section */}
           <div className="md:w-1/2">
             <img
               src={who}
@@ -172,9 +190,7 @@ function About() {
           </div>
         </div>
 
-        {/* Vision Section */}
         <div className="w-full mx-auto flex flex-col md:flex-row items-center">
-          {/* Image Section */}
           <div className="md:w-1/2">
             <img
               src={vision}
@@ -182,7 +198,6 @@ function About() {
               className="w-full h-full object-cover"
             />
           </div>
-          {/* Text Section */}
           <div className="md:w-1/2 bg-gray-100 p-10">
             <h1 className="lg:text-5xl md:text-4xl text-3xl font-bold text-gray-800 leading-snug">
               Our Vision for the Future
@@ -196,9 +211,7 @@ function About() {
           </div>
         </div>
 
-        {/* Mission Section */}
         <div className="w-full mx-auto flex flex-col md:flex-row items-center">
-          {/* Text Section */}
           <div className="md:w-1/2 bg-gray-100 p-10">
             <h1 className="lg:text-5xl md:text-4xl text-3xl font-bold text-gray-800 leading-snug">
               Our Mission Statement
@@ -214,7 +227,7 @@ function About() {
               wherever they may be in the world.
             </p>
           </div>
-          {/* Image Section */}
+
           <div className="md:w-1/2">
             <img
               src={mission}
@@ -224,9 +237,7 @@ function About() {
           </div>
         </div>
 
-        {/* UEI Envisions Section */}
         <div className="w-full mx-auto flex flex-col md:flex-row items-center">
-          {/* Image Section */}
           <div className="md:w-1/2">
             <img
               src={UEI}
@@ -234,7 +245,7 @@ function About() {
               className="w-full h-full object-cover"
             />
           </div>
-          {/* Text Section */}
+
           <div className="md:w-1/2 bg-gray-100 p-10">
             <h1 className="lg:text-5xl md:text-4xl text-3xl font-bold text-gray-800 leading-snug">
               Our Envisioned Future
@@ -274,7 +285,40 @@ function About() {
         </div>
       </div>
 
-      {/* Services Offered */}
+      <div
+        style={{
+          backgroundColor: "#CFD9DF",
+          backgroundImage: "linear-gradient(62deg, #CFD9DF 0%, #E2EBF0 100%)",
+
+          padding: "20px",
+        }}
+        className="mx-auto py-100 px-100 max-w-full"
+      >
+        <div className="border-b border-black mx-auto">
+          <h1 className="uppercase lg:text-7xl md:text-5xl text-3xl text-center lg:p-4 p-2">
+            Meet Our Advisory Board
+          </h1>
+        </div>
+        {advisors.map((advisor, index) => (
+          <div
+            key={advisor.name}
+            className={`ml-10 flex flex-col md:flex-row items-start justify-start my-8 `}
+          >
+            <div className="">
+              <img
+                src={advisor.image}
+                alt={advisor.name}
+                className="w-[400px] h-[300px] object-cover rounded-lg shadow-md"
+              />
+            </div>
+            <div className="md:w-2/3 p-2 text-left">
+              <h2 className="text-4xl font-semibold mb-2">{advisor.name}</h2>
+              <p className="text-lg text-gray-600">{advisor.title}</p>
+            </div>
+          </div>
+        ))}
+      </div>
+
       <div className="w-full mx-auto mt-10">
         <div className="w-1/2 border-b border-black mx-auto">
           <h1 className="uppercase lg:text-6xl md:text-4xl text-2xl text-center lg:p-4 p-2">
@@ -282,7 +326,6 @@ function About() {
           </h1>
         </div>
         <div className="mt-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
-          {/* Service Card */}
           {[
             {
               img: service1,
@@ -368,13 +411,13 @@ function About() {
           ))}
         </div>
       </div>
+
       <div className="mt-10 p-5 bg-gray-200 to-amber-100 border rounded-2xl shadow-lg lg:mx-96 md:mx-28 sm:mx-10 mb-10">
         <p className="text-lg text-center md:text-left">
           Book a session now! Dw! We won't charge you for anything...
         </p>
         <form onSubmit={handleSubmit} className="flex flex-col gap-3">
           {" "}
-          {/* Adjusted gap */}
           <div>
             <Label value="Name*" />
             <TextInput
@@ -486,7 +529,6 @@ function About() {
               I would like to receive updates and offers from UniThink
             </label>
           </div>
-          {/* End of Additional Checkboxes */}
           <Button
             gradientDuoTone="pinkToOrange"
             type="submit"

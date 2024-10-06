@@ -1,0 +1,229 @@
+[
+    {
+      "languageId": "1",
+      "title": "IELTS",
+      "subtitle": "Offline and Online Coaching, Certified trainers, Personal assessment",
+      "details": {
+        "about": "The International English Language Testing System (IELTS) measures the language proficiency of individuals who want to study or work in countries where English is used as a language of communication.",
+        "description": "IELTS exam is conducted worldwide by British Council, UK and IDP, Australia. This test is available in two formats: academic and general.\n\nAcademic IELTS: If applying for higher education or professional registration in English-speaking countries.\nGeneral IELTS: If migrating to Australia, Canada, or the UK.",
+        "exam_structure": {
+          "pattern": [
+            "Reading Section: 3 Sections, Time Allotted - 20 mins for each section.",
+            "Listening Section: 4 Sections, Time Allotted - 30 mins.",
+            "Speaking Section: Time Allotted - 11 to 15 mins.",
+            "Writing Section: 2 Sections, Time Allotted - 20 mins for 1 section and 40 mins for another section."
+          ],
+          "total_time": "2 hours, 45 minutes",
+          "nature_of_exam": "Paper Based Test (PBT) & Computer Based Test (CBT)",
+          "total_scores": "IELTS is out of 9.0 bands."
+        },
+        "other_details": {
+          "website": "http://www.ieltsidpindia.com/",
+          "registration": "Online",
+          "test_fees": "₹ 17000",
+          "score_validity": "2 Years",
+          "score_reporting": "Applicants can report their IELTS score to a maximum of 5 universities as per the STED RO list free of cost after receiving the IELTS result.",
+          "additional_reporting_fees": "INR 250 per Institution via post, INR 1500 via courier."
+        },
+        "test_prep": {
+          "comprehensive_coaching": "Over 40+ hours of in-depth coaching to master every IELTS concept.",
+          "expert_tutors": "Learn from skilled tutors with high-quality test prep materials.",
+          "extensive_practice": "Plenty of assignments to reinforce and strengthen your understanding.",
+          "effective_test_strategies": "Get high scores with test-taking tips, strategies, and topic-specific test series.",
+          "mock_tests": "Experience the real IELTS test with numerous mock exams.",
+          "free_topic_retake": "Students with unsatisfactory progress can re-attend selected topics in the next batch for free."
+        },
+        "enroll_now_button": "Enroll Now"
+      }
+    },
+    {
+      "languageId": "2",
+      "title": "TOEFL",
+      "subtitle": "Monthly online batches, Expert Faculty, Personal assessment",
+      "details": {
+        "about": "TOEFL (Test of English as a Foreign Language) is accepted by more than 11,000 universities worldwide. TOEFL iBT is administered by ETS and measures English proficiency in non-native speakers.",
+        "exam_structure": {
+          "pattern": [
+            "Listening: 3 – 4 lectures, 2 – 3 conversations.",
+            "Reading: 3 – 4 reading passages.",
+            "Writing: 2 tasks based on reading and listening.",
+            "Speaking: 1 independent and 3 integrated speaking tasks."
+          ],
+          "total_time": "2 hours",
+          "total_scores": "TOEFL is out of 120 points."
+        },
+        "other_details": {
+          "website": "https://www.ets.org/toefl",
+          "test_fees": "₹ 16900",
+          "score_validity": "2 Years",
+          "additional_reporting_fees": "₹ 1950",
+          "test_frequency": "Throughout the year (on weekends)."
+        },
+        "test_prep": {
+          "comprehensive_program": "15 classes of 1.5 hours each.",
+          "expert_tutors": "Skilled tutors using high-quality test prep materials.",
+          "effective_test_strategies": "Test-taking tips, strategies, and sectional tests.",
+          "mock_tests": "Real TOEFL test experience with mock tests.",
+          "free_topic_retake": "Students can re-attend selected topics for free."
+        },
+        "enroll_now_button": "Enroll Now"
+      }
+    },
+    {
+      "languageId": "3",
+      "title": "PTE",
+      "subtitle": "On-demand batches, Expert Faculty, Realistic assessments",
+      "details": {
+        "about": "PTE Academic is a computer-based test that measures the English language proficiency of non-native speakers. It is conducted by Pearson Education and is a popular option for study abroad candidates.",
+        "exam_structure": {
+          "pattern": [
+            "Personal Introduction: 1-minute ungraded session.",
+            "Speaking & Writing: Seven question types to test skills.",
+            "Reading: Five question types to assess academic English.",
+            "Listening: Eight question types using audio and video clips."
+          ],
+          "total_time": "2 hours",
+          "total_scores": "PTE score is out of 90 points."
+        },
+        "other_details": {
+          "website": "http://pearsonpte.com",
+          "test_fees": "₹ 17000",
+          "score_validity": "2 Years",
+          "score_reporting": "Unlimited score reporting to institutions without extra fees."
+        },
+        "test_prep": {
+          "comprehensive_coaching": "20+ hours of training.",
+          "expert_tutors": "Skilled tutors with high-quality resources.",
+          "effective_test_strategies": "Test-taking tips and strategies.",
+          "mock_tests": "Mock tests for a real PTE exam experience.",
+          "skill_building_worksheets": "Variety of worksheets for skill enhancement."
+        },
+        "enroll_now_button": "Enroll Now"
+      }
+    },
+    {
+      "languageId": "4",
+      "title": "Duolingo Test",
+      "subtitle": "On-demand batches, Expert Faculty, Realistic Practice",
+      "details": {
+        "about": "The Duolingo English Test is a quick and convenient way to measure your English language proficiency. It can be taken from home and is recognized by various institutions worldwide.",
+        "exam_structure": {
+          "pattern": [
+            "Quick Setup: 5 minutes.",
+            "Adaptive Test: 45 minutes covering all four language skills.",
+            "Video & Writing Sample: 10 minutes, ungraded."
+          ],
+          "total_time": "1 hour",
+          "nature_of_exam": "Computer-Based Test (CBT)."
+        },
+        "other_details": {
+          "website": "https://englishtest.duolingo.com/home",
+          "test_fees": "$65",
+          "score_validity": "2 Years",
+          "score_reporting": "Unlimited score reporting for free."
+        },
+        "test_prep": {
+          "on_demand_lectures": "Access to recorded lectures anytime.",
+          "expert_tutors": "Learn from experienced tutors.",
+          "mock_tests": "Real Duolingo test experience with in-house materials.",
+          "small_batch_size": "Focused learning with smaller batch sizes."
+        },
+        "enroll_now_button": "Enroll Now"
+      }
+    },
+    {
+      "languageId": "5",
+      "title": "German Language A1",
+      "subtitle": "On-demand batches, Expert Faculty, Personal assessment",
+      "details": {
+        "about": "Learn German from beginner to advanced levels, starting with A1 level certification. Our expert tutors guide you through the fundamentals of the language.",
+        "exam_structure": {
+          "pattern": [
+            "Reading: Focus on basic comprehension.",
+            "Listening: Understand simple spoken German.",
+            "Speaking: Practice conversational skills.",
+            "Writing: Compose short essays and dialogues."
+          ],
+          "total_time": "Varies by course length."
+        },
+        "other_details": {
+          "registration": "Online",
+          "test_fees": "Varies",
+          "score_reporting": "Based on course completion."
+        },
+        "test_prep": {
+          "comprehensive_coaching": "Tailored lessons for beginners.",
+          "expert_tutors": "Skilled tutors with real-life examples.",
+          "interactive_practice": "Engaging assignments to improve learning."
+        },
+        "enroll_now_button": "Enroll Now"
+      }
+    },
+    {
+      "languageId": "6",
+      "title": "Japanese Language",
+      "subtitle": "On-demand batches, Expert Faculty, Personalized assessments",
+      "details": {
+        "about": "Learn Japanese from beginner to advanced levels. Our courses are designed to help you master speaking, reading, and writing in Japanese.",
+        "exam_structure": {
+          "pattern": [
+            "Reading: Practice reading simple texts in Japanese.",
+            "Writing: Learn to write using Japanese characters.",
+            "Speaking: Develop conversational fluency."
+          ],
+          "total_time": "Varies by level."
+        },
+        "other_details": {
+          "registration": "Online",
+          "test_fees": "Varies",
+          "score_reporting": "Based on level completion."
+        },
+        "test_prep": {
+          "comprehensive_training": "From basic to advanced levels.",
+          "expert_guidance": "Learn from native and certified Japanese tutors.",
+          "cultural_lessons": "Understand Japanese culture alongside language learning."
+        },
+        "enroll_now_button": "Enroll Now"
+      }
+    },
+    {
+      "languageId": "7",
+      "title": "OET",
+      "subtitle": "Monthly online batches, Expert Faculty, Personal assessment",
+      "details": {
+        "about": "OET (Occupational English Test) is an English language test designed for healthcare professionals. It assesses the language communication skills of healthcare professionals who wish to register and practice in an English-speaking environment. OET covers 12 different healthcare professions, including medicine, nursing, dentistry, and pharmacy. The test evaluates the four language skills—listening, reading, writing, and speaking—with test content tailored to real-world tasks specific to the healthcare industry.",
+        "description": "OET tests healthcare-specific English skills in four areas: listening, reading, writing, and speaking. The test is available as both paper-based and computer-based, depending on location. Candidates must complete four sections to be graded on a scale from A to E, with A being the highest score.",
+        "exam_structure": {
+          "pattern": [
+            "Listening Section: 3 parts, Time Allotted - 45 mins.",
+            "Reading Section: 3 parts, Time Allotted - 60 mins.",
+            "Writing Section: Time Allotted - 45 mins, Letter writing based on workplace situations.",
+            "Speaking Section: Time Allotted - 20 mins, Role-play with an interlocutor."
+          ],
+          "total_time": "Approximately 3 hours",
+          "nature_of_exam": "Paper Based Test (PBT) & Computer Based Test (CBT)",
+          "total_scores": "Graded from A to E (A being the highest score)"
+        },
+        "other_details": {
+          "website": "https://www.occupationalenglishtest.org",
+          "registration": "Online",
+          "test_fees": "₹ 35000",
+          "score_validity": "2 Years",
+          "score_reporting": "You can send your scores to healthcare boards and councils worldwide.",
+          "additional_reporting_fees": "₹ 2500 per institution"
+        },
+        "test_prep": {
+          "comprehensive_coaching": "Extensive coverage of all four sections with focused training.",
+          "expert_tutors": "Learn from seasoned instructors with healthcare backgrounds.",
+          "extensive_practice": "Engage in practice scenarios similar to those in the healthcare industry.",
+          "effective_test_strategies": "Gain skills in patient communication and medical documentation.",
+          "mock_tests": "Simulate real OET exams to boost confidence.",
+          "free_topic_retake": "Personalized feedback and re-attend specific topics if needed."
+        },
+        "enroll_now_button": "Enroll Now"
+      }
+    }
+    
+    ]
+      
+  

@@ -1,6 +1,5 @@
 import emailjs from 'emailjs-com';
 
-// Initialize EmailJS with your user ID
 emailjs.init('q_m5ggW5G47ZuLiW-');
 
 export const sendRegistrationEmail = (formData) => {
@@ -19,8 +18,8 @@ export const sendRegistrationEmail = (formData) => {
   };
 
   return emailjs.send(
-    'service_fk02xgj', // Your service ID
-    'template_il2g2zq', // Your template ID
+    'service_fk02xgj', 
+    'template_il2g2zq', 
     templateParams
   );
 };

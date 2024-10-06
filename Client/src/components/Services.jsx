@@ -1,4 +1,5 @@
 import React from "react";
+import styled from "styled-components";
 import service from "../assets/service.png";
 import service1 from "../assets/service1.png";
 import service2 from "../assets/service2.png";
@@ -74,22 +75,43 @@ const services = [
   },
 ];
 
+const StyledImage = styled.img`
+  width: 100%;
+  max-width: 100%; /* Adjust this value as needed */
+  height: auto;
+  object-fit: cover; /* This helps in maintaining the aspect ratio */
+  margin: 0 auto; /* Center the image */
+
+  @media (max-width: 640px) {
+    max-width: 100%; /* Full width on mobile */
+  }
+`;
+
 const Services = () => {
   return (
-    <div className="w-full bg-gray-50">
+    <div
+      style={{
+        backgroundColor: "#CFD9DF",
+        backgroundImage: "linear-gradient(62deg, #CFD9DF 0%, #E2EBF0 100%)",
+
+        padding: "20px",
+      }}
+      className="w-full bg-gray-50"
+    >
       <div className="max-w-[1920px] mx-auto lg:py-16 py-10 border-b">
         <div className="w-11/12 mx-auto lg:flex">
           <div className="lg:px-8 flex flex-col justify-center gap-6">
             {/* Heading */}
             <div className="text-3xl">
-              <h1 className="uppercase text-center font-bold tracking-widest text-gray-800 text-left mb-8">
-                Services Offered
-              </h1>
-            </div>
-            <div>
-              <img src={service} alt="Description of the image" />
+              <h1 className="success-stories-heading">Services Offered</h1>
             </div>
 
+            {/* Image Section */}
+            <div className="flex justify-center mb-6">
+              <StyledImage src={service} alt="Description of the image" />
+            </div>
+
+            {/* Commented out grid, can be used for services */}
             {/* <div className="mt-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
               {services.map((service, index) => (
                 <div
@@ -104,10 +126,10 @@ const Services = () => {
                     />
                   </div>
                   <div className="p-4">
-                    <h2 className=" text-center text-lg font-semibold text-gray-800">
+                    <h2 className="text-center text-lg font-semibold text-gray-800">
                       {service.title}
                     </h2>
-                    <p className=" text-center text-sm text-gray-600">
+                    <p className="text-center text-sm text-gray-600">
                       {service.description}
                     </p>
                   </div>

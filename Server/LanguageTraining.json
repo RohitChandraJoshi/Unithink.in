@@ -1,0 +1,74 @@
+{
+  "languageTrainingCards": [
+    {
+      "languageId": 1,
+      "name": "IELTS",
+      "details": {
+        "point1": "Offline and Online Coaching",
+        "point2": "Certified trainers",
+        "point3": "Personal assessment"
+      },
+      "buttonText": "Know More"
+    },
+    {
+      "languageId": 2,
+      "name": "TOEFL",
+      "details": {
+        "point1": "Monthly online batches",
+        "point2": "Expert Faculty",
+        "point3": "Personal assessment"
+      },
+      "buttonText": "Know More"
+    },
+    {
+      "languageId": 3,
+      "name": "PTE",
+      "details": {
+        "point1": "On-demand batches",
+        "point2": "Expert Faculty",
+        "point3": "Realistic assessments"
+      },
+      "buttonText": "Know More"
+    },
+    {
+      "languageId": 4,
+      "name": "Duolingo Test",
+      "details": {
+        "point1": "On-demand batches",
+        "point2": "Expert Faculty",
+        "point3": "Realistic Practice"
+      },
+      "buttonText": "Know More"
+    },
+    {
+      "languageId": 5,
+      "name": "Level A1 German Language",
+      "details": {
+        "point1": "On-demand batches",
+        "point2": "Expert Faculty",
+        "point3": "Personal assessment"
+      },
+      "buttonText": "Know More"
+    },
+    {
+      "languageId": 6,
+      "name": "Japanese Language",
+      "details": {
+        "point1": "Beginner to advanced levels",
+        "point2": "Experienced native tutors",
+        "point3": "Interactive learning sessions"
+      },
+      "buttonText": "Know More"
+    },
+    {
+      "languageId": 7,
+      "name": "OET",
+      "details": {
+        "point1": "Specialized medical test prep",
+        "point2": "Expert guidance",
+        "point3": "Real-time practice tests"
+      },
+      "buttonText": "Know More"
+    }
+  ]
+}

@@ -28,16 +28,16 @@ const Business = () => {
   const [successMessage, setSuccessMessage] = useState(null);
   const handleSubmit = async (e) => {
     e.preventDefault();
-    console.log("Form data:", formData); // Check if formData is correctly populated
+    console.log("Form data:", formData);
     try {
       setLoading(true);
       const response = await axios.post(
         "https://unithink-backend.vercel.app/api/consultation/",
         formData
       );
-      console.log("Response from backend:", response.data); // Log response for debugging
+      console.log("Response from backend:", response.data);
 
-      await sendEmail(formData); // Send email using emailjs
+      await sendEmail(formData);
 
       setLoading(false);
       setSuccessMessage("Form submitted successfully!");
@@ -54,7 +54,7 @@ const Business = () => {
       });
       setErrorMessage(null);
     } catch (error) {
-      console.error("Error sending data:", error); // Log error for debugging
+      console.error("Error sending data:", error);
       setLoading(false);
       setErrorMessage("Failed to submit form. Please try again later.");
       toast.error("Failed to submit form. Please try again later.");

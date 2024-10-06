@@ -11,9 +11,9 @@ import { faWhatsapp } from "@fortawesome/free-brands-svg-icons";
 import { Link } from "react-router-dom";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import "../pages/Booking.css"; // Adjusted path to CSS file
+import "../pages/Booking.css";
 import { BsLinkedin, BsInstagram, BsTwitter } from "react-icons/bs";
-import boardmeet from "../assets/pexels-expressivestanley-1454360.jpg"; // Adjusted path to image file
+import boardmeet from "../assets/pexels-expressivestanley-1454360.jpg";
 import { Footer } from "flowbite-react";
 import { sendEmail } from "./EmailService";
 
@@ -34,16 +34,16 @@ function Contact() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    console.log("Form data:", formData); // Check if formData is correctly populated
+    console.log("Form data:", formData);
     try {
       setLoading(true);
       const response = await axios.post(
         "https://unithink-backend.vercel.app/api/consultation/",
         formData
       );
-      console.log("Response from backend:", response.data); // Log response for debugging
+      console.log("Response from backend:", response.data);
 
-      await sendEmail(formData); // Send email using emailjs
+      await sendEmail(formData);
 
       setLoading(false);
       setSuccessMessage("Form submitted successfully!");
@@ -60,7 +60,7 @@ function Contact() {
       });
       setErrorMessage(null);
     } catch (error) {
-      console.error("Error sending data:", error); // Log error for debugging
+      console.error("Error sending data:", error);
       setLoading(false);
       setErrorMessage("Failed to submit form. Please try again later.");
       toast.error("Failed to submit form. Please try again later.");
@@ -185,7 +185,6 @@ function Contact() {
                 </option>
               </Select>
             </div>
-            {/* Additional Checkboxes */}
             <div className="flex items-center">
               <Checkbox
                 id="agreeTerms"
@@ -227,7 +226,6 @@ function Contact() {
                 I would like to receive updates and offers from UniThink
               </label>
             </div>
-            {/* End of Additional Checkboxes */}
             <Button
               gradientDuoTone="pinkToOrange"
               type="submit"

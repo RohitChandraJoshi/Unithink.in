@@ -10,6 +10,8 @@ import 'react-toastify/dist/ReactToastify.css';
 import Services from '../components/Services'
 import PopularCourses from '../components/PopularCourses'
 import Awards from '../components/Awards'
+import SuccessStories from '../components/SuccessStories'
+import ImageGallery from '../components/ImageGallery'
 function Home() {
 
   return (
@@ -17,14 +19,16 @@ function Home() {
         <ToastContainer/>
         <BookNow/>
         {/* <Intro/> */}
+        <ImageGallery/>
         <Services/>
-
-
-        {/* <Categories/> */}
-        <AboutUs/>
         <PopularCountriesImages/>
         <PopularCourses/>
         <Awards/>
+        <SuccessStories/>
+        {/* <Categories/> */}
+        <AboutUs/>
+
+
 
         <Articles/>
     </div>

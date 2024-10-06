@@ -4,8 +4,8 @@ import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { ToastContainer, toast } from "react-toastify";
 import { faWhatsapp } from "@fortawesome/free-brands-svg-icons";
-import Logo from "../assets/logo.jpg"; // Ensure the correct path to the logo
-import skillingtopimage from '../assets/skillingtopimage.png';
+import Logo from "../assets/logo.jpg";
+import skillingtopimage from "../assets/skillingtopimage.png";
 
 function Skilling() {
   const [courses, setCourses] = useState([]);
@@ -35,7 +35,15 @@ function Skilling() {
       : courses.filter((course) => course.category === selectedCategory);
 
   return (
-    <div className="px-4 md:px-8 bg-white">
+    <div
+      style={{
+        backgroundColor: "#CFD9DF",
+        backgroundImage: "linear-gradient(62deg, #CFD9DF 0%, #E2EBF0 100%)",
+
+        padding: "20px",
+      }}
+      className="px-4 md:px-8 bg-white"
+    >
       <ToastContainer />
 
       <div className="text-center mt-10">
@@ -44,7 +52,11 @@ function Skilling() {
         </h1>
         <div className="h-1 bg-orange-500 w-20 mx-auto mb-5"></div>
         <div className="flex justify-center items-center">
-          <img className="w-200 max-w-xs md:max-w-full h-auto md:h-80" src={skillingtopimage} alt="skilling top image" />
+          <img
+            className="w-200 max-w-xs md:max-w-full h-auto md:h-80"
+            src={skillingtopimage}
+            alt="skilling top image"
+          />
         </div>
         <p className="text-center text-gray-900 text-sm md:text-base">
           Take the first step towards a successful future. Schedule a free
@@ -78,31 +90,51 @@ function Skilling() {
           <div className="flex flex-wrap justify-center space-x-2 md:space-x-4 mt-5">
             <button
               onClick={() => setSelectedCategory("All")}
-              className={`px-3 py-2 rounded-lg text-sm md:text-base ${selectedCategory === "All" ? "bg-orange-500 text-white" : "bg-gray-200 text-black"}`}
+              className={`px-3 py-2 rounded-lg text-sm md:text-base ${
+                selectedCategory === "All"
+                  ? "bg-orange-500 text-white"
+                  : "bg-gray-200 text-black"
+              }`}
             >
               All
             </button>
             <button
               onClick={() => setSelectedCategory("Students")}
-              className={`px-3 py-2 rounded-lg text-sm md:text-base ${selectedCategory === "Students" ? "bg-orange-500 text-white" : "bg-gray-200 text-black"}`}
+              className={`px-3 py-2 rounded-lg text-sm md:text-base ${
+                selectedCategory === "Students"
+                  ? "bg-orange-500 text-white"
+                  : "bg-gray-200 text-black"
+              }`}
             >
               Students
             </button>
             <button
               onClick={() => setSelectedCategory("Professional Certification")}
-              className={`px-3 py-2 rounded-lg text-sm md:text-base ${selectedCategory === "Professional Certification" ? "bg-orange-500 text-white" : "bg-gray-200 text-black"}`}
+              className={`px-3 py-2 rounded-lg text-sm md:text-base ${
+                selectedCategory === "Professional Certification"
+                  ? "bg-orange-500 text-white"
+                  : "bg-gray-200 text-black"
+              }`}
             >
-              Professionals 
+              Professionals Certification
             </button>
             <button
               onClick={() => setSelectedCategory("Become Corporate Ready")}
-              className={`mt-2 md:mt-0 px-3 py-2 rounded-lg text-sm md:text-base ${selectedCategory === "Become Corporate Ready" ? "bg-orange-500 text-white" : "bg-gray-200 text-black"}`}
+              className={`mt-2 md:mt-0 px-3 py-2 rounded-lg text-sm md:text-base ${
+                selectedCategory === "Become Corporate Ready"
+                  ? "bg-orange-500 text-white"
+                  : "bg-gray-200 text-black"
+              }`}
             >
               Become Corporate Ready
             </button>
             <button
               onClick={() => setSelectedCategory("Entrepreneurship")}
-              className={`mt-2 md:mt-0 px-3 py-2 rounded-lg text-sm md:text-base ${selectedCategory === "Entrepreneurship" ? "bg-orange-500 text-white" : "bg-gray-200 text-black"}`}
+              className={`mt-2 md:mt-0 px-3 py-2 rounded-lg text-sm md:text-base ${
+                selectedCategory === "Entrepreneurship"
+                  ? "bg-orange-500 text-white"
+                  : "bg-gray-200 text-black"
+              }`}
             >
               Entrepreneurship
             </button>

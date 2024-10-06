@@ -30,7 +30,8 @@ import RegisterForm from './pages/Registration'
 import Blogs from './pages/Blogs'
 import BlogDetails from './pages/BlogDetails'
 import SkillingDetails from './pages/SkillingDetails'
-
+import LanguageTraining from './pages/LanguageTraining'
+import LanguageTrainingDetails from './pages/LanguageTrainingDetails'
 function App() {
   return (
     <BrowserRouter>
@@ -62,7 +63,8 @@ function App() {
         <Route path="/blogs" element={<Blogs />} />
         <Route path="/blog/:id" element={<BlogDetails />} />
         <Route path="/skillingdetails/:skillId" element={<SkillingDetails />} />
-       
+        <Route path='/languagetraining' element={<LanguageTraining/>}/>
+        <Route path="/languagetrainingdetails/:languageId" element={<LanguageTrainingDetails />} />
       
       </Routes>
       <Footer/>

@@ -23,7 +23,7 @@ const quizQuestions = [
     answer: "True",
   },
   {
-    question: "TThe currency of Japan is the Yuan.",
+    question: "The currency of Japan is the Yuan.",
     options: ["True", "False"],
     answer: "False",
   },

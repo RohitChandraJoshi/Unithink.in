@@ -3,7 +3,7 @@ import { useParams, Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faWhatsapp } from "@fortawesome/free-brands-svg-icons";
 const BlogDetails = () => {
-  const { id } = useParams(); // Get the blog ID from URL
+  const { id } = useParams();
   const [blog, setBlog] = useState(null);
 
   useEffect(() => {
@@ -26,12 +26,12 @@ const BlogDetails = () => {
   };
 
   if (!blog) {
-    return <div>Loading...</div>; // Show loading while data is being fetched
+    return <div>Loading...</div>;
   }
 
   return (
     <div className="font-sans leading-relaxed">
-            <div className="mt-10">
+      <div className="mt-10">
         <Link
           to="https://wa.me/message/GIWSQYCHN67RD1 "
           target="_blank"
@@ -54,7 +54,9 @@ const BlogDetails = () => {
                 {section.heading}
               </h2>
               {section.content.map((content, idx) => (
-                <p key={idx} className="mb-2">{content.text}</p>
+                <p key={idx} className="mb-2">
+                  {content.text}
+                </p>
               ))}
             </section>
           ))

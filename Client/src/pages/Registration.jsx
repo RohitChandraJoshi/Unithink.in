@@ -1,5 +1,12 @@
 import React, { useState } from "react";
-import { TextInput, Button, Select, Checkbox, Label, Radio } from "flowbite-react";
+import {
+  TextInput,
+  Button,
+  Select,
+  Checkbox,
+  Label,
+  Radio,
+} from "flowbite-react";
 import axios from "axios";
 import { ToastContainer, toast } from "react-toastify";
 import { useLocation } from "react-router-dom";
@@ -20,8 +27,8 @@ const RegisterForm = () => {
     counsellingNeeded: "",
     highestQualification: "",
     agreeTerms: false,
-    contactPreference: false,  // New state for contact preference
-    receiveUpdates: false,     // New state for receiving updates
+    contactPreference: false, // New state for contact preference
+    receiveUpdates: false, // New state for receiving updates
   });
 
   const [loading, setLoading] = useState(false);
@@ -64,7 +71,7 @@ const RegisterForm = () => {
         "https://unithink-backend.vercel.app/api/register",
         formData
       );
-      await sendRegistrationEmail(formData); 
+      await sendRegistrationEmail(formData);
 
       setLoading(false);
       toast.success("Registration successful!");
@@ -80,9 +87,7 @@ const RegisterForm = () => {
         agreeTerms: false,
         contactPreference: false,
         receiveUpdates: false,
-      }
-      
-      );
+      });
     } catch (error) {
       console.error("Error submitting form:", error);
       setLoading(false);
@@ -93,7 +98,9 @@ const RegisterForm = () => {
   return (
     <div className="mt-10 p-5 bg-gray-200 to-amber-100 border rounded-2xl shadow-lg lg:mx-96 md:mx-28 sm:mx-10 mb-10">
       <ToastContainer />
-      <h2 className="text-2xl font-bold mb-4 text-center">Register for {courseName}</h2>
+      <h2 className="text-2xl font-bold mb-4 text-center">
+        Register for {courseName}
+      </h2>
       <form onSubmit={handleSubmit} className="flex flex-col gap-3">
         <div>
           <Label value="Name*" />
@@ -172,8 +179,7 @@ const RegisterForm = () => {
             <option value="Other">Other</option>
           </Select>
         </div>
-        {/* Course Mode Radio Buttons */}
-        
+
         <div>
           <Label value="Course Mode*" />
           <div className="flex items-center gap-4">
@@ -197,8 +203,6 @@ const RegisterForm = () => {
             <Label htmlFor="offline">Offline</Label>
           </div>
         </div>
-        
-        {/* Counselling Radio Buttons */}
 
         <div>
           <Label value="Do you need free counselling?" />
@@ -223,11 +227,11 @@ const RegisterForm = () => {
             <Label htmlFor="counsellingNo">No</Label>
           </div>
         </div>
-        {/* Terms and Conditions Checkbox */}
+
         <label htmlFor="receiveUpdates" className="text-sm">
-            UniThink will not share your details with others without your
-            permission:
-          </label>
+          UniThink will not share your details with others without your
+          permission:
+        </label>
         <div className="flex items-center">
           <Checkbox
             id="agreeTerms"
@@ -235,14 +239,21 @@ const RegisterForm = () => {
             onChange={handleChange}
             required
           />
-          
+
           <label htmlFor="agreeTerms" className="ml-2 text-sm">
-            I agree to the 
-            <a href="/terms" className="text-blue-500"> UniThink Terms </a> and 
-            <a href="/privacypolicy" className="text-blue-500"> privacy policy</a>
+            I agree to the
+            <a href="/terms" className="text-blue-500">
+              {" "}
+              UniThink Terms{" "}
+            </a>{" "}
+            and
+            <a href="/privacypolicy" className="text-blue-500">
+              {" "}
+              privacy policy
+            </a>
           </label>
         </div>
-        {/* Contact Preference Checkbox */}
+
         <div className="flex items-center">
           <Checkbox
             id="contactPreference"
@@ -253,7 +264,7 @@ const RegisterForm = () => {
             Please contact me by phone, email or SMS to assist with my enquiry
           </label>
         </div>
-        {/* Receive Updates Checkbox */}
+
         <div className="flex items-center">
           <Checkbox
             id="receiveUpdates"

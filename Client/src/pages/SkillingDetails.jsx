@@ -55,7 +55,7 @@ function SkillingDetails() {
 
   return (
     <div className="container mx-auto px-4 py-8">
-            <div className="mt-10">
+      <div className="mt-10">
         <Link
           to="https://wa.me/message/GIWSQYCHN67RD1 "
           target="_blank"
@@ -96,7 +96,9 @@ function SkillingDetails() {
           {/* Course Duration */}
           <div className="bg-white p-2 rounded-lg shadow-lg mb-1">
             <h2 className="text-xl font-semibold mb-2">Course Duration</h2>
-            <p className="text-gray-800 mb-2">{courseDetails.course_duration}</p>
+            <p className="text-gray-800 mb-2">
+              {courseDetails.course_duration}
+            </p>
           </div>
 
           {/* Register Button */}
@@ -111,7 +113,9 @@ function SkillingDetails() {
 
           {/* Why Choose This Course */}
           <div className="bg-white p-4 rounded-lg shadow-lg mb-4">
-            <h2 className="text-xl font-semibold mb-2">Why Choose This Course?</h2>
+            <h2 className="text-xl font-semibold mb-2">
+              Why Choose This Course?
+            </h2>
             <p className="text-gray-800 mb-2">
               {courseDetails.why_choose_this_course}
             </p>
@@ -141,7 +145,6 @@ function SkillingDetails() {
             </ul>
           </div>
 
-          
           {/* Contact Us */}
           <div className="bg-white p-4 rounded-lg shadow-lg mb-4">
             <h2 className="text-xl font-semibold mb-2">Contact Us</h2>

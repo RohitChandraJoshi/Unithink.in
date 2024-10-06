@@ -47,16 +47,16 @@ const University = () => {
   const [successMessage, setSuccessMessage] = useState(null);
   const handleSubmit = async (e) => {
     e.preventDefault();
-    console.log("Form data:", formData); // Check if formData is correctly populated
+    console.log("Form data:", formData);
     try {
       setLoading(true);
       const response = await axios.post(
         "https://unithink-backend.vercel.app/api/consultation/",
         formData
       );
-      console.log("Response from backend:", response.data); // Log response for debugging
+      console.log("Response from backend:", response.data);
 
-      await sendEmail(formData); // Send email using emailjs
+      await sendEmail(formData);
 
       setLoading(false);
       setSuccessMessage("Form submitted successfully!");
@@ -73,7 +73,7 @@ const University = () => {
       });
       setErrorMessage(null);
     } catch (error) {
-      console.error("Error sending data:", error); // Log error for debugging
+      console.error("Error sending data:", error);
       setLoading(false);
       setErrorMessage("Failed to submit form. Please try again later.");
       toast.error("Failed to submit form. Please try again later.");
@@ -93,7 +93,6 @@ const University = () => {
   });
   useEffect(() => {
     const interval = setInterval(() => {
-      // Update statistics with increasing count
       setStatistics((prevStats) => ({
         ...prevStats,
         universitiesTied:
@@ -111,7 +110,6 @@ const University = () => {
       }));
     }, 10);
 
-    // Clear interval when component unmounts
     return () => clearInterval(interval);
   }, []);
 
@@ -174,7 +172,7 @@ const University = () => {
           </div>
         </div>
       </div>
-      <div className="flex justify-center items-center min-h-screen">
+      <div className="flex justify-center items-center mt-10">
         <div className="lg:w-2/4 w-full flex flex-col justify-top items-center  md:mx-4 px-2 mx-auto">
           <div className="p-5 bg-gray-200 border rounded-2xl shadow-lg shadow-2xl mb-4">
             <p className="text-lg text-center md:text-left">
@@ -183,7 +181,6 @@ const University = () => {
             </p>
             <form onSubmit={handleSubmit} className="flex flex-col gap-3">
               {" "}
-              {/* Adjusted gap */}
               <div>
                 <Label value="Name*" />
                 <TextInput
@@ -251,7 +248,6 @@ const University = () => {
                   </option>
                 </Select>
               </div>
-              
               <label htmlFor="receiveUpdates" className="text-sm">
                 UniThink will not share your details with others without your
                 permission:
@@ -297,7 +293,6 @@ const University = () => {
                   I would like to receive updates and offers from UniThink
                 </label>
               </div>
-              {/* End of Additional Checkboxes */}
               <Button
                 gradientDuoTone="pinkToOrange"
                 type="submit"

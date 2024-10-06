@@ -1,0 +1,406 @@
+/* General reset to remove any extra margins or paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Container styles */
+  .success-stories-container {
+    background-color: #f3f4f6; /* Light gray background */
+    display: flex; /* Enable flexbox */
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
+  }
+  
+  /* Heading */
+  .success-stories-heading {
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    font-size: 2.5rem; /* Large font size for heading */
+    font-weight: 600;
+    padding: 2px; /* Ensure no padding */
+   
+  }
+  /* Mobile styles */
+@media (max-width: 640px) {
+  .success-stories-heading {
+      font-size: 1.8rem; /* Smaller font size for mobile */
+      margin-bottom: 30px; /* Adjust bottom margin */
+      margin-top: 30px; /* Adjust top margin */
+  }
+}
+
+/* Tablet styles */
+@media (min-width: 641px) and (max-width: 1024px) {
+  .success-stories-heading {
+      font-size: 2.2rem; /* Medium font size for tablets */
+      margin-bottom: 35px; /* Adjust bottom margin */
+      margin-top: 35px; /* Adjust top margin */
+  }
+}
+  
+  /* Horizontal scroll container */
+  .success-stories-scroll {
+    display: flex;
+    overflow-x: auto; /* Allow horizontal scroll */
+    padding-left: 30px;
+    gap: 20px; /* Space between cards */
+    padding-bottom: 0px; /* Remove any bottom padding */
+    margin-bottom: 2%; /* Ensure no bottom margin */
+    justify-content: flex-start; /* Align cards to the start */
+  }
+  
+  /* Individual card styles */
+  .success-stories-card {
+    min-width: 320px;
+    max-width: 320px;
+    background-color: #fff;
+    padding: 24px;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-top: 4px solid #f59e0b; /* Yellow top border */
+    flex-shrink: 0; /* Ensure cards don't shrink */
+    margin-bottom: 0; /* Remove bottom margin */
+    height: auto; /* Allow height to adjust dynamically */
+  }
+  
+  /* Quote icon */
+  .success-stories-quote {
+    width: 24px;
+    height: 24px;
+    margin-bottom: 10px; /* Add space below icon */
+  }
+  
+  /* Review text */
+  .success-stories-review {
+    color: #4b5563;
+    font-style: italic;
+    margin-bottom: 16px;
+    white-space: normal;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  
+  /* Name and location text */
+  .success-stories-name {
+    font-weight: bold;
+    font-size: 1.125rem;
+    color: #1f2937;
+  }
+  
+  .success-stories-location {
+    font-size: 0.875rem;
+    color: #6b7280;
+  }
+  
+  /* Responsive design for mobile */
+  @media only screen and (max-width: 640px) {
+    .success-stories-card {
+      min-width: 300px; /* Smaller card size for mobile */
+      max-width: 300px;
+      
+    }
+  
+    .success-stories-scroll {
+      gap: 16px; /* Adjust gap for mobile */
+    }
+  
+    .success-stories-container {
+      padding-bottom: 0px; /* No padding for mobile */
+    }
+  }
+  
+  /* Tablet screen size */
+  @media only screen and (min-width: 641px) and (max-width: 1024px) {
+    .success-stories-card {
+      min-width: 320px;
+      max-width: 320px;
+    }
+  
+    .success-stories-scroll {
+      gap: 18px; /* Adjust gap for tablet */
+    }
+  
+  }
+  
+  /* Laptop and larger screens */
+  @media only screen and (min-width: 1025px) {
+    .success-stories-card {
+      min-width: 350px; /* Larger card size */
+      max-width: 350px;
+    }
+  
+    .success-stories-scroll {
+      gap: 24px; /* Larger gap for laptop screens */
+    }
+  
+    .success-stories-container {
+      padding-bottom: 0px; /* No bottom padding */
+    }
+  }
+/* General reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Main container styles */
+  .popular-countries-container {
+    background-color: #f3f4f6; /* Light gray background */
+    display: flex; /* Enable flexbox */
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
+    
+  }
+  
+  /* Heading styles */
+  .popular-countries-heading {
+    padding-top: 2%;
+    text-align: center;
+    margin: 10px 0; /* Reduced margin above and below the heading */
+    font-size: 2.5rem; /* Large font size */
+    font-weight: 600;
+  }
+  
+  /* Scrollable container */
+  .popular-countries-scroll {
+    display: flex;
+    overflow-x: auto; 
+    padding: 5px 20px; /* Added padding to left and right */
+    gap: 10px; 
+    width: 80%;    
+    justify-content: start; /* Center the cards */
+    scroll-behavior: smooth; 
+}
+  
+  /* Individual country card styles */
+  .country-card {
+    min-width: 300px; /* Minimum card width */
+    max-width: 300px; /* Maximum card width */
+    position: relative; /* For positioning the overlay */
+    flex-shrink: 0; /* Prevent shrinking */
+    
+  }
+  
+  /* Image styles */
+  .country-image {
+    border-radius: 12px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow effect */
+    transition: filter 0.3s ease-in-out; /* Transition for blur effect */
+    width: 100%; /* Full width */
+  }
+  
+  /* Overlay styles */
+  .country-overlay {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0; /* Initially hidden */
+    transition: opacity 0.3s ease-in-out; /* Smooth transition */
+    background-color: rgba(0, 0, 0, 0.5); /* Dark overlay */
+    border-radius: 12px; /* Rounded corners */
+  }
+  
+  /* Show overlay on hover */
+  .country-card:hover .country-overlay {
+    opacity: 1; /* Show overlay */
+  }
+  
+  /* Text styles for overlay */
+  .country-overlay-text {
+    color: #ffffff; /* White text */
+    font-size: 1.5rem; /* Larger font size */
+    font-weight: bold; /* Bold text */
+  }
+  
+  /* Button styles */
+  .browse-more-button {
+    display: flex;
+    justify-content: center; /* Center button content */
+    align-items: center; /* Center align items */
+    margin: 20px 0; /* Add margin for spacing above and below */
+  }
+  
+  /* Mobile styles */
+  @media only screen and (max-width: 640px) {
+    .popular-countries-heading {
+      font-size: 1.5rem; /* Smaller font size for mobile */
+      margin: 5px 0; /* Reduced margin */
+    }
+  
+    .country-card {
+      min-width: 260px; /* Smaller card size for mobile */
+      max-width: 260px;
+    }
+  
+    .popular-countries-scroll {
+      padding: 0 15px; /* Padding to left and right for mobile */
+      gap: 10px; /* Space between cards for mobile */
+    }
+  }
+  
+  /* Tablet styles */
+  @media only screen and (min-width: 641px) and (max-width: 1024px) {
+    .popular-countries-heading {
+      font-size: 2.2rem; /* Medium font size for iPad */
+      margin: 5px 0; /* Adjust margin below heading */
+    }
+  
+    .country-card {
+      min-width: 280px; /* Adjust card size for iPad */
+      max-width: 280px;
+    }
+  
+    .popular-countries-scroll {
+      padding: 0 20px; /* Padding for iPad */
+      gap: 15px; /* Adjust gap for iPad */
+    }
+  }
+  
+  /* Laptop and larger screens */
+  @media only screen and (min-width: 1025px) {
+    .country-card {
+      min-width: 300px; /* Standard card size */
+      max-width: 300px;
+    }
+  
+    .popular-countries-scroll {
+      gap: 20px; /* Standard gap for larger screens */
+    }
+  }
+  
+ /* General reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Main container styles */
+  .popular-courses-container {
+    background-color: #f3f4f6; /* Light gray background */
+    display: flex; /* Enable flexbox */
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
+  }
+  
+  /* Heading styles */
+  .popular-courses-heading {
+    padding-top: 2%;
+    text-align: center;
+    margin: 10px 0; /* Reduced margin above and below the heading */
+    font-size: 2.5rem; /* Large font size */
+    font-weight: 600;
+  }
+  
+  /* Scrollable container */
+  .popular-courses-scroll {
+    display: flex;
+    overflow-x: auto; 
+    padding: 5px 20px; /* Added padding to left and right */
+    gap: 10px; 
+    width: 80%;    
+    justify-content: start; /* Center the cards */
+    scroll-behavior: smooth; 
+  }
+  
+  /* Individual course card styles */
+  .course-card {
+    min-width: 300px; /* Minimum card width */
+    max-width: 300px; /* Maximum card width */
+    position: relative; /* For positioning the overlay */
+    flex-shrink: 0; /* Prevent shrinking */
+  }
+  
+  /* Image styles */
+  .course-image {
+    border-radius: 12px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow effect */
+    transition: filter 0.3s ease-in-out; /* Transition for blur effect */
+    width: 100%; /* Full width */
+  }
+  
+  /* Overlay styles */
+  .course-overlay {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0; /* Initially hidden */
+    transition: opacity 0.3s ease-in-out; /* Smooth transition */
+    background-color: rgba(0, 0, 0, 0.5); /* Dark overlay */
+    border-radius: 12px; /* Rounded corners */
+  }
+  
+  /* Show overlay on hover */
+  .course-card:hover .course-overlay {
+    opacity: 1; /* Show overlay */
+  }
+  
+  /* Text styles for overlay */
+  .course-overlay-text {
+    color: #ffffff; /* White text */
+    font-size: 1.5rem; /* Larger font size */
+    font-weight: bold; /* Bold text */
+  }
+  
+  .browse-more-button {
+    display: flex;
+    justify-content: center; /* Center button content */
+    align-items: center; /* Center align items */
+    margin: 20px 0; /* Add margin for spacing above and below */
+  }
+  /* Mobile styles */
+  @media only screen and (max-width: 640px) {
+    .popular-courses-heading {
+      font-size: 1.5rem; /* Smaller font size for mobile */
+      margin: 5px 0; /* Reduced margin */
+    }
+  
+    .course-card {
+      min-width: 260px; /* Smaller card size for mobile */
+      max-width: 260px;
+    }
+  
+    .popular-courses-scroll {
+      padding: 0 20px; /* Padding for iPad */
+      gap: 15px; /* Adjust gap for iPad */
+    }
+  }
+  
+  /* Tablet styles */
+  @media only screen and (min-width: 641px) and (max-width: 1024px) {
+    .popular-courses-heading {
+      font-size: 2.2rem; /* Medium font size for iPad */
+      margin: 5px 0; /* Adjust margin below heading */
+    }
+  
+    .course-card {
+      min-width: 280px; /* Adjust card size for iPad */
+      max-width: 280px;
+    }
+  
+    .popular-courses-scroll {
+      padding: 0 20px; /* Padding for iPad */
+      gap: 15px; /* Adjust gap for iPad */
+    }
+  }
+  
+  /* Laptop and larger screens */
+  @media only screen and (min-width: 1025px) {
+    .course-card {
+      min-width: 300px; /* Standard card size */
+      max-width: 300px;
+    }
+  
+    .popular-courses-scroll {
+      gap: 20px; /* Standard gap for larger screens */
+    }
+  }
+   

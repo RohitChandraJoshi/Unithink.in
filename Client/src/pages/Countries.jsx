@@ -3,11 +3,11 @@ import axios from "axios";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faWhatsapp } from "@fortawesome/free-brands-svg-icons";
-import Logo from "../assets/logo.jpg"; // Ensure the correct path to the logo
+import Logo from "../assets/logo.jpg";
 
 function Countries() {
   const [countries, setCountries] = useState([]);
-  const [loading, setLoading] = useState(true); // Loading state
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     const fetchData = async () => {
@@ -17,7 +17,7 @@ function Countries() {
         );
         const responseData = response.data;
         setCountries(responseData);
-        setLoading(false); // Set loading to false after data is fetched
+        setLoading(false);
       } catch (error) {
         console.log(error);
       }
@@ -26,7 +26,15 @@ function Countries() {
   }, []);
 
   return (
-    <div className="px-8 bg-white">
+    <div
+      style={{
+        backgroundColor: "#CFD9DF",
+        backgroundImage: "linear-gradient(62deg, #CFD9DF 0%, #E2EBF0 100%)",
+
+        padding: "20px",
+      }}
+      className="px-8 bg-white"
+    >
       <div className="mt-10">
         <Link
           to="https://wa.me/message/GIWSQYCHN67RD1 "
@@ -39,7 +47,7 @@ function Countries() {
           </button>
         </Link>
       </div>
-      {loading ? ( // Render a loading indicator while loading
+      {loading ? (
         <div className="flex justify-center items-center h-screen">
           <img src={Logo} alt="Logo" className="w-32 animate-pulse" />
         </div>
@@ -53,21 +61,25 @@ function Countries() {
           </div>
 
           <div className="mt-4 max-w-7xl mx-auto px-4">
-            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 justify-items-center">
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 justify-items-center">
               {countries &&
                 countries.map((country) => (
                   <Link
                     key={country._id}
                     to={`/countrydetail/${country.c_id}`}
                     className="block bg-white rounded-lg shadow-md overflow-hidden transition-transform transform hover:scale-105"
-                    style={{ width: "350px", height: "450px" }}
+                    style={{
+                      width: "100%",
+                      maxWidth: "350px",
+                      height: "450px",
+                    }}
                   >
                     <div className="relative overflow-hidden">
                       <img
                         src={country.top_image}
                         alt={country.c_name}
                         className="w-full h-2/3 object-cover"
-                        style={{ height: "250px" }} // Adjust this if needed
+                        style={{ height: "250px" }}
                       />
                     </div>
                     <div className="p-4">

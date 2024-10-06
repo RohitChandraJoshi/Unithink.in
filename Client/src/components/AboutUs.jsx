@@ -4,7 +4,7 @@ import aboutusperson from "../assets/aboutusperson1.png";
 import { BsCheck2All } from "react-icons/bs";
 import aboutshape from "../assets/about-shape-2.svg";
 import Quiz from "./Quiz";
-import bruceleeimage from '../assets/brucelee.jpg';
+import bruceleeimage from "../assets/brucelee.jpg";
 
 function AboutUs() {
   return (
@@ -12,8 +12,12 @@ function AboutUs() {
       <div>
         <div>
           <div
-            style={{ backgroundImage: `url(${aboutus})` }}
-            className="bg-left bg-no-repeat"
+            style={{
+              backgroundImage: `url(${aboutus})`,
+              marginTop: "5%",
+              marginBottom: "2%",
+            }}
+            className="bg-left bg-no-repeat "
           >
             <div className="relative mx-auto flex max-w-5xl flex-col md:flex-row md:items-center sm:gap-2 p-2">
               <Quiz />
@@ -27,7 +31,7 @@ function AboutUs() {
                   practiced one kick 10,000 times." - Bruce Lee
                 </h5>
                 <img
-                  className="w-40 h-auto  object-cover"
+                  className="w-40 h-auto object-cover"
                   src={bruceleeimage}
                   alt="bruceleeimage"
                 />

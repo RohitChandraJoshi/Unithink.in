@@ -47,16 +47,16 @@ const Counselling = () => {
   const [successMessage, setSuccessMessage] = useState(null);
   const handleSubmit = async (e) => {
     e.preventDefault();
-    console.log("Form data:", formData); // Check if formData is correctly populated
+    console.log("Form data:", formData);
     try {
       setLoading(true);
       const response = await axios.post(
         "https://unithink-backend.vercel.app/api/consultation/",
         formData
       );
-      console.log("Response from backend:", response.data); // Log response for debugging
+      console.log("Response from backend:", response.data);
 
-      await sendEmail(formData); // Send email using emailjs
+      await sendEmail(formData);
 
       setLoading(false);
       setSuccessMessage("Form submitted successfully!");
@@ -73,7 +73,7 @@ const Counselling = () => {
       });
       setErrorMessage(null);
     } catch (error) {
-      console.error("Error sending data:", error); // Log error for debugging
+      console.error("Error sending data:", error);
       setLoading(false);
       setErrorMessage("Failed to submit form. Please try again later.");
       toast.error("Failed to submit form. Please try again later.");
@@ -92,7 +92,6 @@ const Counselling = () => {
   });
   useEffect(() => {
     const interval = setInterval(() => {
-      // Update statistics with increasing count
       setStatistics((prevStats) => ({
         ...prevStats,
         universitiesTied:
@@ -110,7 +109,6 @@ const Counselling = () => {
       }));
     }, 10);
 
-    // Clear interval when component unmounts
     return () => clearInterval(interval);
   }, []);
 
@@ -168,8 +166,8 @@ const Counselling = () => {
           </div>
         </div>
       </div>
-      <div className="flex justify-center items-center min-h-screen">
-        <div className="lg:w-2/4 w-full flex flex-col justify-top items-center  md:mx-4 px-2 mx-auto">
+      <div className="flex justify-center items-center mt-10">
+        <div className="w-full lg:w-4/5 md:w-3/4 flex flex-col justify-top items-center md:mx-4 px-2 mx-auto">
           <div className="p-5 bg-gray-200 border rounded-2xl shadow-lg shadow-2xl mb-4">
             <p className="text-lg text-center md:text-left">
               Book a session now! Don't worry! We won't charge you for

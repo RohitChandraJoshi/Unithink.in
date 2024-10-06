@@ -11,7 +11,7 @@ function Articles() {
   const scrollToTop = () => {
     window.scrollTo({
       top: 0,
-      behavior: "smooth", // Smooth scrolling behavior
+      behavior: "smooth",
     });
   };
   return (
@@ -26,7 +26,7 @@ function Articles() {
               <p className="mb-4 mt-10 pt-5 text-gray-500 font-medium ">
                 LATEST ARTICLES
               </p>
-              <h1 className="mb-4 text-5xl font-bold sm:text-lg md:text-4xl">
+              <h1 className="success-stories-heading ">
                 Get News With UniThink
               </h1>
             </div>

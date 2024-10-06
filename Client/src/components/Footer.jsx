@@ -31,18 +31,13 @@ function FooterCom() {
                 { name: "USA", c_id: "u007" },
                 { name: "Canada", c_id: "c002" },
                 { name: "United Kingdom", c_id: "u006" },
-                { name: "Ireland", c_id: "u011" }, 
+                { name: "France", c_id: "f003" },
                 { name: "Australia", c_id: "a001" },
                 { name: "Russia", c_id: "u008" },
-                { name: "Europe", c_id: "" }, 
-                { name: "Asia", c_id: "" },
-                { name: "Dubai", c_id: "u005" },
-                { name: "Sweden", c_id: "f001" }, 
+                { name: "UAE", c_id: "u005" },
                 { name: "Germany", c_id: "f004" },
-                { name: "Belgium", c_id: "f005" }, 
-                { name: "Italy", c_id: "f006" }, 
+                { name: "UK", c_id: "u006" },
                 { name: "India", c_id: "u010" },
-                { name: "Luxembourg", c_id: "f007" }, 
               ].map((country) => (
                 <Footer.Link
                   key={country.c_id}

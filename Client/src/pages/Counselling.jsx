@@ -95,9 +95,9 @@ const Counselling = () => {
       setStatistics((prevStats) => ({
         ...prevStats,
         universitiesTied:
-          prevStats.universitiesTied < 350
+          prevStats.universitiesTied < 815
             ? prevStats.universitiesTied + 5
-            : 350,
+            : 815,
         coursesAvailable:
           prevStats.coursesAvailable < 25 ? prevStats.coursesAvailable + 1 : 25,
         satisfactionRate:

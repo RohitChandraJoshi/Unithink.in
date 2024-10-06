@@ -10,7 +10,6 @@
     background-color: #f3f4f6; /* Background color */
     padding-top: 16px;
     padding-bottom: 0px; /* Remove bottom padding */
-    min-height: 100vh; /* Ensure full screen height */
     overflow: hidden; /* Hide any overflow that could cause margins */
   }
   

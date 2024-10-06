@@ -89,16 +89,8 @@ const StyledImage = styled.img`
 
 const Services = () => {
   return (
-    <div
-      style={{
-        backgroundColor: "#CFD9DF",
-        backgroundImage: "linear-gradient(62deg, #CFD9DF 0%, #E2EBF0 100%)",
-
-        padding: "20px",
-      }}
-      className="w-full bg-gray-50"
-    >
-      <div className="max-w-[1920px] mx-auto lg:py-16 py-10 border-b">
+    <div className="w-full bg-gray-50">
+      <div className="max-w-[1600px] mx-auto lg:py-16 py-10 border-b">
         <div className="w-11/12 mx-auto lg:flex">
           <div className="lg:px-8 flex flex-col justify-center gap-6">
             {/* Heading */}

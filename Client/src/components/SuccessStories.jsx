@@ -1,6 +1,7 @@
-import React from "react";
+import React, { useEffect, useRef, useState } from "react";
 import quoto from "../assets/quoto.png";
 import "./scrollleftcards.css";
+
 const successStoriesData = {
   successStories: [
     {
@@ -29,7 +30,35 @@ const successStoriesData = {
     },
   ],
 };
+
 const SuccessStories = () => {
+  const scrollContainerRef = useRef(null);
+  const [isScrolling, setIsScrolling] = useState(true);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      if (scrollContainerRef.current && isScrolling) {
+        const scrollWidth = scrollContainerRef.current.scrollWidth;
+        const currentScrollLeft = scrollContainerRef.current.scrollLeft;
+        const visibleWidth = scrollContainerRef.current.clientWidth;
+
+        if (currentScrollLeft + visibleWidth >= scrollWidth) {
+          setIsScrolling(false);
+          setTimeout(() => {
+            scrollContainerRef.current.scrollTo({ left: 0, behavior: "auto" });
+            setIsScrolling(true);
+          }, 1000);
+        } else {
+          scrollContainerRef.current.scrollBy({
+            left: 1,
+            behavior: "smooth",
+          });
+        }
+      }
+    }, 30);
+    return () => clearInterval(interval);
+  }, [isScrolling]);
+
   return (
     <div
       style={{
@@ -44,24 +73,33 @@ const SuccessStories = () => {
           Unithinkers' Success Stories
         </h2>
 
-        <div className="success-stories-scroll">
-          {successStoriesData.successStories.map((story, index) => (
-            <div key={index} className="success-stories-card">
-              <div className="mb-4">
-                <img
-                  src={quoto}
-                  alt="Quote Icon"
-                  className="success-stories-quote"
-                />
-              </div>
-              <p className="success-stories-review">{story.review}</p>
-              <h4 className="success-stories-name">{story.name}</h4>
-              <p className="success-stories-location">{story.location}</p>
-            </div>
+        <div
+          className="success-stories-scroll"
+          ref={scrollContainerRef}
+          style={{ overflowX: "hidden", whiteSpace: "nowrap" }}
+        >
+          {Array.from({ length: 5 }).map((_, repeatIndex) => (
+            <React.Fragment key={repeatIndex}>
+              {successStoriesData.successStories.map((story, index) => (
+                <div key={index} className="success-stories-card">
+                  <div className="mb-4">
+                    <img
+                      src={quoto}
+                      alt="Quote Icon"
+                      className="success-stories-quote"
+                    />
+                  </div>
+                  <p className="success-stories-review">{story.review}</p>
+                  <h4 className="success-stories-name">{story.name}</h4>
+                  <p className="success-stories-location">{story.location}</p>
+                </div>
+              ))}
+            </React.Fragment>
           ))}
         </div>
       </div>
     </div>
   );
 };
+
 export default SuccessStories;

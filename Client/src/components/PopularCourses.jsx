@@ -1,6 +1,5 @@
-import React from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { Button } from "flowbite-react";
-import homebg from "../assets/homebg.png";
 import { HiArrowCircleRight } from "react-icons/hi";
 import { Link } from "react-router-dom";
 
@@ -11,7 +10,6 @@ const courses = [
     image:
       "https://firebasestorage.googleapis.com/v0/b/unithink-89630.appspot.com/o/UniThink%20courses%20images%2FBusinessAdministraion_icon.png?alt=media&token=6fa08a0d-b544-497e-88f8-485ad646dd8e",
   },
-
   {
     courseId: "course003",
     courseName: "Computer Science/IT",
@@ -39,6 +37,9 @@ const courses = [
 ];
 
 function PopularCourses() {
+  const scrollContainerRef = useRef(null);
+  const [isScrolling, setIsScrolling] = useState(true);
+
   const scrollToTop = () => {
     window.scrollTo({
       top: 0,
@@ -46,16 +47,33 @@ function PopularCourses() {
     });
   };
 
-  return (
-    <div
-      style={{
-        backgroundColor: "#CFD9DF",
-        backgroundImage: "linear-gradient(100deg, #CFD9DF 0%, #E2EBF0 100%)",
+  useEffect(() => {
+    const interval = setInterval(() => {
+      if (scrollContainerRef.current && isScrolling) {
+        const scrollWidth = scrollContainerRef.current.scrollWidth;
+        const currentScrollLeft = scrollContainerRef.current.scrollLeft;
+        const visibleWidth = scrollContainerRef.current.clientWidth;
 
-        padding: "20px",
-      }}
-      className="popular-courses-container"
-    >
+        if (currentScrollLeft + visibleWidth >= scrollWidth) {
+          setIsScrolling(false);
+          setTimeout(() => {
+            scrollContainerRef.current.scrollTo({ left: 0, behavior: "auto" });
+            setIsScrolling(true);
+          }, 1000);
+        } else {
+          scrollContainerRef.current.scrollBy({
+            left: 2,
+            behavior: "smooth",
+          });
+        }
+      }
+    }, 30);
+
+    return () => clearInterval(interval);
+  }, [isScrolling]);
+
+  return (
+    <div className="popular-courses-container">
       <p className="text-center mt-10 pt-5 text-red-500 font-medium text-2xl">
         POPULAR COURSES
       </p>
@@ -63,24 +81,34 @@ function PopularCourses() {
         Pick a course you like the most
       </h1>
 
-      <div className="popular-courses-scroll">
-        {courses.map((course) => (
-          <Link
-            to={`/coursedetail/${course.courseId}`}
-            className="course-card"
-            key={course.courseId}
-          >
-            <img
-              src={course.image}
-              alt={course.courseName}
-              className="course-image"
-            />
-            <div className="course-overlay">
-              <span className="course-overlay-text">{course.courseName}</span>
-            </div>
-          </Link>
+      <div
+        className="popular-courses-scroll"
+        ref={scrollContainerRef}
+        style={{ overflowX: "hidden", whiteSpace: "nowrap" }}
+      >
+        {Array.from({ length: 5 }).map((_, repeatIndex) => (
+          <React.Fragment key={repeatIndex}>
+            {courses.map((course) => (
+              <Link
+                to={`/coursedetail/${course.courseId}`}
+                className="course-card"
+                key={course.courseId}
+                style={{ display: "inline-block", marginRight: "10px" }}
+              >
+                <img
+                  src={course.image}
+                  alt={course.courseName}
+                  className="course-image"
+                />
+                <div className="course-overlay">
+                  <span className="course-overlay-text">{course.courseName}</span>
+                </div>
+              </Link>
+            ))}
+          </React.Fragment>
         ))}
       </div>
+
       <Link to="/courses">
         <Button
           outline

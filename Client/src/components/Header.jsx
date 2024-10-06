@@ -10,7 +10,7 @@ function Header() {
   const [searchQuery, setSearchQuery] = useState("");
   const [filteredCountries, setFilteredCountries] = useState([]);
   const [filteredCourses, setFilteredCourses] = useState([]);
-  const [isNavbarOpen, setIsNavbarOpen] = useState(false); 
+  const [isNavbarOpen, setIsNavbarOpen] = useState(false);
 
   const hardcodedCountries = [
     { c_id: "u007", c_name: "USA" },
@@ -28,7 +28,10 @@ function Header() {
   const courses = [
     { courseId: "course010", courseName: "Medicine" },
     { courseId: "course001", courseName: "Business Administration" },
-    { courseId: "course002", courseName: "Data Science/Analytics and Machine Learning" },
+    {
+      courseId: "course002",
+      courseName: "Data Science/Analytics and Machine Learning",
+    },
     { courseId: "course003", courseName: "Computer Science/IT" },
     { courseId: "course004", courseName: "Engineering" },
     { courseId: "course005", courseName: "Economics" },
@@ -72,14 +75,14 @@ function Header() {
     setSearchQuery("");
     setFilteredCountries([]);
     setFilteredCourses([]);
-    setIsNavbarOpen(false); 
+    setIsNavbarOpen(false);
   };
 
   const handleCourseClick = () => {
     setSearchQuery("");
     setFilteredCountries([]);
     setFilteredCourses([]);
-    setIsNavbarOpen(false); 
+    setIsNavbarOpen(false);
   };
 
   return (
@@ -91,7 +94,11 @@ function Header() {
       } transition-all duration-300`}
     >
       <Navbar.Brand href="/">
-        <img src={logo} className="mr-3 h-16 sm:h-14 md:h-16 lg:h-20" alt="Unithink" />
+        <img
+          src={logo}
+          className="mr-3 h-16 sm:h-14 md:h-16 lg:h-20"
+          alt="Unithink"
+        />
       </Navbar.Brand>
       <div className="flex items-center relative w-full max-w-xs mx-auto md:mx-0">
         <input
@@ -115,7 +122,10 @@ function Header() {
                 </Link>
               ))}
               {filteredCourses.map((course) => (
-                <Link key={course.courseId} to={`/coursedetail/${course.courseId}`}>
+                <Link
+                  key={course.courseId}
+                  to={`/coursedetail/${course.courseId}`}
+                >
                   <div
                     onClick={handleCourseClick}
                     className="p-2 hover:bg-gray-100 cursor-pointer"
@@ -133,70 +143,88 @@ function Header() {
             Get Started
           </Button>
         </Link>
-        <Navbar.Toggle
-          onClick={() => setIsNavbarOpen((prev) => !prev)} 
-        />
+        <Navbar.Toggle onClick={() => setIsNavbarOpen((prev) => !prev)} />
       </div>
-      <Navbar.Collapse className={`md:flex md:w-auto ${isNavbarOpen ? 'block' : 'hidden'}`}>
+      <Navbar.Collapse
+        className={`md:flex md:w-auto ${isNavbarOpen ? "block" : "hidden"}`}
+      >
         <Navbar.Link>
-          <Link to="/" className="text-gray-800 hover:text-blue-500 transition duration-300 py-2 md:py-0">
+          <Link
+            to="/"
+            className="text-gray-800 hover:text-blue-500 transition duration-300 py-2 md:py-0"
+          >
             Home
           </Link>
         </Navbar.Link>
         <Navbar.Link>
-          <Link to="/about" className="text-gray-800 hover:text-blue-500 transition duration-300 py-2 md:py-0">
+          <Link
+            to="/about"
+            className="text-gray-800 hover:text-blue-500 transition duration-300 py-2 md:py-0"
+          >
             About
           </Link>
         </Navbar.Link>
         <Navbar.Link>
-          <Link to="/countries" className="text-gray-800 hover:text-blue-500 transition duration-300 py-2 md:py-0">
+          <Link
+            to="/countries"
+            className="text-gray-800 hover:text-blue-500 transition duration-300 py-2 md:py-0"
+          >
             Countries
           </Link>
         </Navbar.Link>
-        <div className="relative md:flex md:items-center ml-3 ">
+        <div className="relative md:flex md:items-center ml-3">
           <Dropdown label="Skilling" inline>
             <Dropdown.Item>
               <Link
-                to="/skilling"
-                className="block px-4 py-2 text-gray-700 hover:bg-blue-500 hover:text-white transition duration-300 ease-in-out rounded-md"
-                onClick={() => setIsNavbarOpen(false)} 
+                to="/courses"
+                className="block w-full px-4 py-2 text-gray-700 hover:bg-blue-500 hover:text-white transition duration-300 ease-in-out rounded-md"
+                onClick={() => setIsNavbarOpen(false)}
               >
-                Certifications
+                Courses
               </Link>
             </Dropdown.Item>
             <Dropdown.Item>
               <Link
                 to="/languagetraining"
-                className="block px-4 py-2 text-gray-700 hover:bg-blue-500 hover:text-white transition duration-300 ease-in-out rounded-md"
-                onClick={() => setIsNavbarOpen(false)} 
+                className="block w-full px-4 py-2 text-gray-700 hover:bg-blue-500 hover:text-white transition duration-300 ease-in-out rounded-md"
+                onClick={() => setIsNavbarOpen(false)}
               >
                 Language Training
               </Link>
             </Dropdown.Item>
             <Dropdown.Item>
               <Link
-                to="/courses"
-                className="block px-4 py-2 text-gray-700 hover:bg-blue-500 hover:text-white transition duration-300 ease-in-out rounded-md"
-                onClick={() => setIsNavbarOpen(false)} 
+                to="/skilling"
+                className="block w-full px-4 py-2 text-gray-700 hover:bg-blue-500 hover:text-white transition duration-300 ease-in-out rounded-md"
+                onClick={() => setIsNavbarOpen(false)}
               >
-                Abroad Courses
+                Certifications
               </Link>
             </Dropdown.Item>
-            
           </Dropdown>
         </div>
+
         <Navbar.Link>
-          <Link to="/blogs" className="text-gray-800 hover:text-blue-500 transition duration-300 py-2 md:py-0">
+          <Link
+            to="/blogs"
+            className="text-gray-800 hover:text-blue-500 transition duration-300 py-2 md:py-0"
+          >
             Blogs
           </Link>
         </Navbar.Link>
         <Navbar.Link>
-          <Link to="/faqs" className="text-gray-800 hover:text-blue-500 transition duration-300 py-2 md:py-0">
+          <Link
+            to="/faqs"
+            className="text-gray-800 hover:text-blue-500 transition duration-300 py-2 md:py-0"
+          >
             FAQs
           </Link>
         </Navbar.Link>
         <Navbar.Link>
-          <Link to="/contact" className="text-gray-800 hover:text-blue-500 transition duration-300 py-2 md:py-0">
+          <Link
+            to="/contact"
+            className="text-gray-800 hover:text-blue-500 transition duration-300 py-2 md:py-0"
+          >
             Contact
           </Link>
         </Navbar.Link>

@@ -140,17 +140,6 @@ function LanguageTrainingDetails() {
               <strong>Additional Reporting Fees:</strong>{" "}
               {trainingDetails.details.other_details.additional_reporting_fees}
             </p>
-            <p>
-              <strong>More Info:</strong>
-              <a
-                href={trainingDetails.details.other_details.website}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-blue-500"
-              >
-                {trainingDetails.details.other_details.website}
-              </a>
-            </p>
           </div>
 
           <div className="bg-white p-4 rounded-lg shadow-lg mb-4">

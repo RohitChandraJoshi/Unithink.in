@@ -13,7 +13,7 @@ function FooterCom() {
   return (
     <Footer bgLight>
       <div className="w-full bg-white to-amber-100 ">
-        <div className="grid w-full grid-cols-3 gap-8 px-6 py-8 md:grid-cols-6 mx-auto justify-items-center">
+        <div className="grid w-full grid-cols-2 gap-8 px-6 py-8 md:grid-cols-6 mx-auto justify-items-center">
           <div>
             <Footer.Title title="Company" />
             <Footer.LinkGroup col>
@@ -160,7 +160,7 @@ function FooterCom() {
               ].map((language) => (
                 <Footer.Link
                   key={language.languageId}
-                  href={`/languagetrainingdetail/${language.languageId}`}
+                  href={`/languagetrainingdetails/${language.languageId}`}
                 >
                   {language.name}
                 </Footer.Link>

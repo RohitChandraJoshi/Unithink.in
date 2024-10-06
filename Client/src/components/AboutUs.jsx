@@ -8,14 +8,14 @@ import bruceleeimage from "../assets/brucelee.jpg";
 
 function AboutUs() {
   return (
-    <div>
+    <div >
       <div>
         <div>
           <div
             style={{
               backgroundImage: `url(${aboutus})`,
-              marginTop: "5%",
-              marginBottom: "2%",
+              marginTop: "8%",
+              marginBottom: "8%",
             }}
             className="bg-left bg-no-repeat "
           >

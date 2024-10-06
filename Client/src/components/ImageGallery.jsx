@@ -1,10 +1,9 @@
 // App.js
-import React from 'react';
-import Slider from 'react-slick';
-import './ImageGallery.css'; // Include your custom styling here
-import "slick-carousel/slick/slick.css"; 
+import React from "react";
+import Slider from "react-slick";
+import "./ImageGallery.css"; // Include your custom styling here
+import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-
 
 function ImageGallery() {
   const images = [
@@ -12,7 +11,6 @@ function ImageGallery() {
     "https://firebasestorage.googleapis.com/v0/b/unithink-89630.appspot.com/o/gallery%20images%2Fsheelan10.jpg?alt=media&token=9cf208d6-0949-4c4b-ad48-d54374304dbe",
     "https://firebasestorage.googleapis.com/v0/b/unithink-89630.appspot.com/o/gallery%20images%2Fsheelan11.jpg?alt=media&token=21a558df-33c0-4a6c-b827-a214ef306bb4",
     "https://firebasestorage.googleapis.com/v0/b/unithink-89630.appspot.com/o/gallery%20images%2Fsheelan12.jpg?alt=media&token=d718242a-0f74-44b9-981d-3026b19f7fce",
-    "https://firebasestorage.googleapis.com/v0/b/unithink-89630.appspot.com/o/gallery%20images%2Fsheelan2.jpg?alt=media&token=2cdc5bdb-b789-4bf1-9d07-9bb500cad108",
     "https://firebasestorage.googleapis.com/v0/b/unithink-89630.appspot.com/o/gallery%20images%2Fsheelan4.jpg?alt=media&token=e6722c2a-ca06-4aa0-92da-49a81eb9ec7e",
     "https://firebasestorage.googleapis.com/v0/b/unithink-89630.appspot.com/o/gallery%20images%2Fsheelan5.jpg?alt=media&token=c09e2c01-108a-4a03-895b-be1f3fa3b7fe",
     "https://firebasestorage.googleapis.com/v0/b/unithink-89630.appspot.com/o/gallery%20images%2Fsheelan6.jpg?alt=media&token=f221a0a8-cf46-4cba-bed4-42f87d71f829",
@@ -28,11 +26,7 @@ function ImageGallery() {
     "https://firebasestorage.googleapis.com/v0/b/unithink-89630.appspot.com/o/gallery%20images%2FDSC08721.JPG?alt=media&token=9db30bef-2fde-4d6c-b247-2a6610d5b27a",
     "https://firebasestorage.googleapis.com/v0/b/unithink-89630.appspot.com/o/gallery%20images%2FDSC09073.JPG?alt=media&token=0b462b1b-8985-46db-9b5e-d9e990de6d30",
     "https://firebasestorage.googleapis.com/v0/b/unithink-89630.appspot.com/o/gallery%20images%2Fsheelanmisra16.jpg?alt=media&token=aba6dee3-f476-4e1e-b3ce-092302d7452c",
-    "https://firebasestorage.googleapis.com/v0/b/unithink-89630.appspot.com/o/gallery%20images%2Fsheelanmisra17.jpg?alt=media&token=b14aeaa5-4072-41b1-957f-f08b898cadfe",
-    "https://firebasestorage.googleapis.com/v0/b/unithink-89630.appspot.com/o/gallery%20images%2Fsheelan3.jpg?alt=media&token=a4236458-b437-45b7-9a83-24a891479e44",
-    "https://firebasestorage.googleapis.com/v0/b/unithink-89630.appspot.com/o/gallery%20images%2Fsheelanmisra18.jpg?alt=media&token=ea9cf687-79f5-4495-a292-b7cc58b2f4f6"
-
-];
+  ];
 
   const settings = {
     dots: true,
@@ -41,11 +35,18 @@ function ImageGallery() {
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 2000,
+    autoplaySpeed: 1000,
   };
 
   return (
-    <div  className="App">
+    <div
+      style={{
+        backgroundColor: "#CFD9DF",
+        backgroundImage: "linear-gradient(100deg, #CFD9DF 0%, #E2EBF0 100%)",
+        padding: "20px",
+      }}
+      className="App"
+    >
       {/* <header className="text-center mb-10 text-5xl font-semibold sm:text-lg md:text-3xl mt-10">
         <h1>Welcome to the Image Gallery</h1>
       </header>
@@ -54,7 +55,11 @@ function ImageGallery() {
         <Slider {...settings}>
           {images.map((image, index) => (
             <div key={index}>
-              <img src={image} alt={`Gallery Image ${index + 1}`} className="gallery-image" />
+              <img
+                src={image}
+                alt={`Gallery Image ${index + 1}`}
+                className="gallery-image"
+              />
             </div>
           ))}
         </Slider>

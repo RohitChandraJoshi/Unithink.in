@@ -1,11 +1,10 @@
-import React from "react";
+import React, { useEffect, useRef, useState } from "react";
 import usa from "../assets/usa.jpg";
 import uk from "../assets/uk.jpg";
 import pp from "../assets/pp.jpeg";
 import { Button } from "flowbite-react";
 import { HiArrowCircleRight } from "react-icons/hi";
 import { Link } from "react-router-dom";
-import rotated from "../assets/rotated.png";
 import "./scrollleftcards.css";
 
 const india =
@@ -22,6 +21,9 @@ const countries = [
 ];
 
 function PopularCountriesImages() {
+  const scrollContainerRef = useRef(null);
+  const [isScrolling, setIsScrolling] = useState(true);
+
   const scrollToTop = () => {
     window.scrollTo({
       top: 0,
@@ -29,31 +31,73 @@ function PopularCountriesImages() {
     });
   };
 
+  useEffect(() => {
+    const interval = setInterval(() => {
+      if (scrollContainerRef.current && isScrolling) {
+        const scrollWidth = scrollContainerRef.current.scrollWidth;
+        const currentScrollLeft = scrollContainerRef.current.scrollLeft;
+        const visibleWidth = scrollContainerRef.current.clientWidth;
+
+        if (currentScrollLeft + visibleWidth >= scrollWidth) {
+          setIsScrolling(false);
+          setTimeout(() => {
+            scrollContainerRef.current.scrollTo({ left: 0, behavior: "auto" });
+            setIsScrolling(true);
+          }, 1000);
+        } else {
+          scrollContainerRef.current.scrollBy({
+            left: 2,
+            behavior: "smooth",
+          });
+        }
+      }
+    }, 30);
+
+    return () => clearInterval(interval);
+  }, [isScrolling]);
+
   return (
-    <div className="popular-countries-container">
+    <div
+      style={{
+        backgroundColor: "#CFD9DF",
+        backgroundImage: "linear-gradient(62deg, #CFD9DF 0%, #E2EBF0 100%)",
+        padding: "20px",
+      }}
+      className="popular-countries-container"
+    >
       <p className="text-center mt-10 pt-5 text-red-500 font-medium text-2xl">
         POPULAR COUNTRIES
       </p>
 
-      <h1 className=" success-stories-heading ">
+      <h1 className="success-stories-heading">
         Pick a country you like the most
       </h1>
-      <div className="popular-countries-scroll">
-        {countries.map((country, index) => (
-          <Link
-            key={index}
-            to={`/countrydetail/${country.c_id}`}
-            className="country-card"
-          >
-            <img
-              src={country.image}
-              alt={country.c_name}
-              className="country-image"
-            />
-            <div className="country-overlay">
-              <span className="country-overlay-text">{country.c_name}</span>
-            </div>
-          </Link>
+
+      <div
+        className="popular-countries-scroll"
+        ref={scrollContainerRef}
+        style={{ overflowX: "hidden", whiteSpace: "nowrap" }}
+      >
+        {Array.from({ length: 5 }).map((_, repeatIndex) => (
+          <React.Fragment key={repeatIndex}>
+            {countries.map((country) => (
+              <Link
+                key={country.c_id}
+                to={`/countrydetail/${country.c_id}`}
+                className="country-card"
+                style={{ display: "inline-block", marginRight: "10px" }}
+              >
+                <img
+                  src={country.image}
+                  alt={country.c_name}
+                  className="country-image"
+                />
+                <div className="country-overlay">
+                  <span className="country-overlay-text">{country.c_name}</span>
+                </div>
+              </Link>
+            ))}
+          </React.Fragment>
         ))}
       </div>
 
@@ -64,7 +108,7 @@ function PopularCountriesImages() {
           onClick={scrollToTop}
           gradientDuoTone="pinkToOrange"
           pill
-          className="browse-more-button  hover:scale-105"
+          className="browse-more-button hover:scale-105"
           style={{ zIndex: 1 }}
         >
           Browse more Countries <HiArrowCircleRight size={25} />

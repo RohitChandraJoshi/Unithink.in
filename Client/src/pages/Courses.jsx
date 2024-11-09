@@ -35,7 +35,7 @@ function Courses() {
       }}
       className="px-8 bg-white"
     >
-      <div className="mt-10">
+      {/* <div className="mt-10">
         <Link
           to="https://wa.me/message/H6GTSW5G5WWTK1"
           target="_blank"
@@ -46,7 +46,7 @@ function Courses() {
             Chat with Us!
           </button>
         </Link>
-      </div>
+      </div> */}
       {loading ? (
         <div className="flex justify-center items-center h-screen">
           <div className="flex items-center justify-center h-full">

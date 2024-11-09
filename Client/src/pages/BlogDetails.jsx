@@ -31,7 +31,7 @@ const BlogDetails = () => {
 
   return (
     <div className="font-sans leading-relaxed">
-      <div className="mt-10">
+      {/* <div className="mt-10">
         <Link
           to="https://wa.me/message/GIWSQYCHN67RD1 "
           target="_blank"
@@ -42,7 +42,7 @@ const BlogDetails = () => {
             Chat with Us!
           </button>
         </Link>
-      </div>
+      </div> */}
       <header className="bg-gray-800 p-6 text-white text-center">
         <h1 className="text-3xl font-bold">{blog.title}</h1>
       </header>

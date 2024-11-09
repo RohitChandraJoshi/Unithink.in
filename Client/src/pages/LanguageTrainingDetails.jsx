@@ -56,7 +56,7 @@ function LanguageTrainingDetails() {
 
   return (
     <div className="container mx-auto px-4 py-8">
-      <div className="mt-10">
+      {/* <div className="mt-10">
         <Link
           to="https://wa.me/message/GIWSQYCHN67RD1"
           target="_blank"
@@ -67,7 +67,7 @@ function LanguageTrainingDetails() {
             Chat with Us!
           </button>
         </Link>
-      </div>
+      </div> */}
       {trainingDetails ? (
         <div>
           <h1 className="text-3xl font-bold mb-4">{trainingDetails.title}</h1>

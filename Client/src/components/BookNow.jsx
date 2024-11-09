@@ -204,17 +204,17 @@ function BookNow() {
                   rel="noopener noreferrer"
                   element={<Booking />}
                 >
-                  <button
+                  {/* <button
                     className="fixed bottom-4 right-4 z-50 bg-green-500 text-white py-3 px-6 hover:bg-green-600 flex items-center rounded-lg shadow-lg"
                     onClick={scrollToTop}
                   >
                     <FontAwesomeIcon icon={faWhatsapp} className="mr-2" />
                     Chat with Us!
-                  </button>
+                  </button> */}
                 </Link>
-                <div className="bg-[#F0F4F6]">
+                {/* <div className="bg-[#F0F4F6]">
                   <ImageModal imageSrc={popupImage} />
-                </div>
+                </div> */}
               </div>
               <div className="h-auto flex justify-center mb-10">
                 <div className="grid grid-cols-1 gap-6 md:grid-cols-3 text-center w-full px-4">

@@ -31,7 +31,7 @@ function FAQs() {
 
   return (
     <div className="bg-white">
-      <div className="mt-10">
+      {/* <div className="mt-10">
         <Link
           to="https://wa.me/message/GIWSQYCHN67RD1 "
           target="_blank"
@@ -42,7 +42,7 @@ function FAQs() {
             Chat with Us!
           </button>
         </Link>
-      </div>
+      </div> */}
       {loading ? ( // Render logo with blinking effect while loading
         <div className="flex justify-center items-center h-screen">
           <div className="logo-container">

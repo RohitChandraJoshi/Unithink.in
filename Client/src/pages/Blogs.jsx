@@ -30,7 +30,7 @@ const Blogs = () => {
         padding: "20px",
       }}
     >
-      <div className="mt-10">
+      {/* <div className="mt-10">
         <Link
           to="https://wa.me/message/GIWSQYCHN67RD1 "
           target="_blank"
@@ -41,7 +41,7 @@ const Blogs = () => {
             Chat with Us!
           </button>
         </Link>
-      </div>
+      </div> */}
       <div className="text-center mt-10">
         <h1 className="mb-4 font-bold text-3xl md:text-3xl lg:text-3xl text-black">
           BLOGS

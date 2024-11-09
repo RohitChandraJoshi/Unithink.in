@@ -99,7 +99,7 @@ const Business = () => {
   return (
     <div>
       <ToastContainer />
-      <div className="mt-10">
+      {/* <div className="mt-10">
         <Link
           to="https://wa.me/message/GIWSQYCHN67RD1 "
           target="_blank"
@@ -110,7 +110,7 @@ const Business = () => {
             Chat with Us!
           </button>
         </Link>
-      </div>
+      </div> */}
       <div className="sttt">
         <h1 className="mb-4 font-bold text-3xl md:text-3xl lg:text-4xl text-black relative flex flex-col items-center">
           <span className="mt-10">Education & Business Consultancy</span>

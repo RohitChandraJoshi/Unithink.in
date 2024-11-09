@@ -76,7 +76,7 @@ function Contact() {
   };
   return (
     <div className="flex flex-col md:flex-row relative">
-      <div className="mt-10">
+      {/* <div className="mt-10">
         <Link
           to="https://wa.me/message/GIWSQYCHN67RD1 "
           target="_blank"
@@ -87,7 +87,7 @@ function Contact() {
             Chat with Us!
           </button>
         </Link>
-      </div>
+      </div> */}
       <div
         className="background-image absolute inset-0 bg-cover bg-center pointer-events-none"
         style={{

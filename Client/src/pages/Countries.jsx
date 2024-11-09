@@ -35,7 +35,7 @@ function Countries() {
       }}
       className="px-8 bg-white"
     >
-      <div className="mt-10">
+      {/* <div className="mt-10">
         <Link
           to="https://wa.me/message/GIWSQYCHN67RD1 "
           target="_blank"
@@ -46,7 +46,7 @@ function Countries() {
             Chat with Us!
           </button>
         </Link>
-      </div>
+      </div> */}
       {loading ? (
         <div className="flex justify-center items-center h-screen">
           <img src={Logo} alt="Logo" className="w-32 animate-pulse" />

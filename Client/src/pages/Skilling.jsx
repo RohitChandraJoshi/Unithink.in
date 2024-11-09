@@ -65,7 +65,7 @@ function Skilling() {
         </p>
       </div>
 
-      <div className="mt-10">
+      {/* <div className="mt-10">
         <Link
           to="https://wa.me/message/GIWSQYCHN67RD1 "
           target="_blank"
@@ -76,7 +76,7 @@ function Skilling() {
             Chat with Us!
           </button>
         </Link>
-      </div>
+      </div> */}
 
       {loading ? (
         <div className="flex justify-center items-center h-screen">

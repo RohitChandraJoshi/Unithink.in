@@ -55,7 +55,7 @@ function SkillingDetails() {
 
   return (
     <div className="container mx-auto px-4 py-8">
-      <div className="mt-10">
+      {/* <div className="mt-10">
         <Link
           to="https://wa.me/message/GIWSQYCHN67RD1 "
           target="_blank"
@@ -66,7 +66,7 @@ function SkillingDetails() {
             Chat with Us!
           </button>
         </Link>
-      </div>
+      </div> */}
       {courseDetails ? (
         <div>
           <h1 className="text-3xl font-bold mb-4">

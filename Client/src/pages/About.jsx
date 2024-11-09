@@ -120,7 +120,7 @@ function About() {
 
   return (
     <div>
-      <div className="mt-10">
+      {/* <div className="mt-10">
         <Link
           to="https://wa.me/message/GIWSQYCHN67RD1 "
           target="_blank"
@@ -131,7 +131,7 @@ function About() {
             Chat with Us!
           </button>
         </Link>
-      </div>
+      </div> */}
       <div className="relative max-w-full">
         <div
           style={{ backgroundImage: `url(${boardmeet})`, filter: "blur(8px)" }}

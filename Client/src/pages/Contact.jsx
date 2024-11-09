@@ -88,10 +88,10 @@ function Contact() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <button className="fixed bottom-4 right-4 z-50 bg-green-500 text-white py-3 px-6 hover:bg-green-600 flex items-center rounded-lg shadow-lg">
+          {/* <button className="fixed bottom-4 right-4 z-50 bg-green-500 text-white py-3 px-6 hover:bg-green-600 flex items-center rounded-lg shadow-lg">
             <FontAwesomeIcon icon={faWhatsapp} className="mr-2" />
             Chat with Us!
-          </button>
+          </button> */}
         </a>
       </div>
       <div

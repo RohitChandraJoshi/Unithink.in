@@ -309,7 +309,7 @@ function BookNow() {
                   >
                     <option value="">Select Service Type</option>
                     <option value="Education & Career Counselling">
-                      Education & Career Counselling
+                      Education and Career Counselling
                     </option>
                     <option value="Find Your University & Course ">
                       Find Your University & Course{" "}
@@ -396,7 +396,7 @@ function BookNow() {
                 </Button>
               </Link>
               <h5 className="text-center text-2xl font-bold tracking-tight text-gray-900 dark:text-white pt-5">
-                Education & Career Counselling
+                Education and Career Counselling
               </h5>
               {/* <p className="font-normal text-gray-700 dark:text-gray-400">
                             Understand the factors to consider when selecting a study destination that aligns with your academic, cultural, and personal preferences.
